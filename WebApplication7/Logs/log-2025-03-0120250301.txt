@@ -1,0 +1,154 @@
+2025-03-01 21:01:20.054 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-03-01 21:01:20.321 [INF] Инициируем регистрацию транспортного средства №1
+2025-03-01 21:01:20.337 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-01 21:01:20.353 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-01 21:01:20.360 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-01 21:01:21.937 [INF] Received HTTP response headers after 1571.0921ms - 200
+2025-03-01 21:01:21.942 [INF] End processing HTTP request after 1597.9417ms - 200
+2025-03-01 21:01:21.948 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-01 21:01:22.174 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_4","VehicleId":"charging_4","ServiceSpots":{"parking_1":"parking_1_charging_4","parking_2":"parking_2_charging_4"}}
+2025-03-01 21:01:22.176 [INF] Транспортное средство charging_4 зарегистрировано. Гараж: garrage_charging_4. ServiceSpots: {"parking_1":"parking_1_charging_4","parking_2":"parking_2_charging_4"}
+2025-03-01 21:01:22.177 [INF] Инициируем регистрацию транспортного средства №2
+2025-03-01 21:01:22.177 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-01 21:01:22.178 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-01 21:01:22.180 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-01 21:01:22.295 [INF] Received HTTP response headers after 113.9777ms - 200
+2025-03-01 21:01:22.296 [INF] End processing HTTP request after 117.9017ms - 200
+2025-03-01 21:01:22.298 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-01 21:01:22.299 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_5","VehicleId":"charging_5","ServiceSpots":{"parking_1":"parking_1_charging_5","parking_2":"parking_2_charging_5"}}
+2025-03-01 21:01:22.301 [INF] Транспортное средство charging_5 зарегистрировано. Гараж: garrage_charging_5. ServiceSpots: {"parking_1":"parking_1_charging_5","parking_2":"parking_2_charging_5"}
+2025-03-01 21:01:22.302 [INF] Инициируем регистрацию транспортного средства №3
+2025-03-01 21:01:22.304 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-01 21:01:22.306 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-01 21:01:22.307 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-01 21:01:22.437 [INF] Received HTTP response headers after 128.9454ms - 200
+2025-03-01 21:01:22.438 [INF] End processing HTTP request after 131.8323ms - 200
+2025-03-01 21:01:22.439 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-01 21:01:22.440 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_6","VehicleId":"charging_6","ServiceSpots":{"parking_1":"parking_1_charging_6","parking_2":"parking_2_charging_6"}}
+2025-03-01 21:01:22.440 [INF] Транспортное средство charging_6 зарегистрировано. Гараж: garrage_charging_6. ServiceSpots: {"parking_1":"parking_1_charging_6","parking_2":"parking_2_charging_6"}
+2025-03-01 21:01:22.449 [DBG] Hosting starting
+2025-03-01 21:01:22.623 [DBG] Using development certificate: CN=localhost (Thumbprint: 1AF612A7AC679624FB62E0AE2C5638D7E2435F1F)
+2025-03-01 21:01:22.687 [INF] Now listening on: https://localhost:7163
+2025-03-01 21:01:22.688 [INF] Now listening on: http://localhost:5117
+2025-03-01 21:01:22.689 [DBG] Loaded hosting startup assembly WebApplication7
+2025-03-01 21:01:22.690 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-01 21:01:22.690 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-03-01 21:01:22.691 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-01 21:01:22.693 [INF] Hosting environment: Development
+2025-03-01 21:01:22.695 [INF] Content root path: C:\Users\Юля\source\repos\WebApplication7\WebApplication7\
+2025-03-01 21:01:22.695 [DBG] Hosting started
+2025-03-01 21:01:23.164 [DBG] Connection id "0HNAOTC9V3EK6" received FIN.
+2025-03-01 21:01:23.164 [DBG] Connection id "0HNAOTC9V3EK5" received FIN.
+2025-03-01 21:01:23.182 [DBG] Connection id "0HNAOTC9V3EK6" accepted.
+2025-03-01 21:01:23.182 [DBG] Connection id "0HNAOTC9V3EK5" accepted.
+2025-03-01 21:01:23.184 [DBG] Connection id "0HNAOTC9V3EK6" started.
+2025-03-01 21:01:23.184 [DBG] Connection id "0HNAOTC9V3EK5" started.
+2025-03-01 21:01:23.205 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-01 21:01:23.205 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-01 21:01:23.297 [DBG] Connection id "0HNAOTC9V3EK5" stopped.
+2025-03-01 21:01:23.297 [DBG] Connection id "0HNAOTC9V3EK6" stopped.
+2025-03-01 21:01:23.306 [DBG] Connection id "0HNAOTC9V3EK6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-01 21:01:23.306 [DBG] Connection id "0HNAOTC9V3EK5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-01 21:01:29.285 [DBG] Connection id "0HNAOTC9V3EK7" accepted.
+2025-03-01 21:01:29.287 [DBG] Connection id "0HNAOTC9V3EK7" started.
+2025-03-01 21:01:29.307 [DBG] Connection id "0HNAOTC9V3EK7" received FIN.
+2025-03-01 21:01:29.308 [DBG] Connection id "0HNAOTC9V3EK8" accepted.
+2025-03-01 21:01:29.315 [DBG] Connection id "0HNAOTC9V3EK8" started.
+2025-03-01 21:01:29.318 [DBG] Connection id "0HNAOTC9V3EK8" received FIN.
+2025-03-01 21:01:29.320 [DBG] Connection id "0HNAOTC9V3EK9" accepted.
+2025-03-01 21:01:29.322 [DBG] Connection id "0HNAOTC9V3EK9" started.
+2025-03-01 21:01:29.322 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-01 21:01:29.322 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-01 21:01:29.333 [DBG] Connection id "0HNAOTC9V3EK7" stopped.
+2025-03-01 21:01:29.337 [DBG] Connection id "0HNAOTC9V3EK7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-01 21:01:29.337 [DBG] Connection id "0HNAOTC9V3EK8" stopped.
+2025-03-01 21:01:29.338 [DBG] Connection 0HNAOTC9V3EK9 established using the following protocol: "Tls12"
+2025-03-01 21:01:29.340 [DBG] Connection id "0HNAOTC9V3EK8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-01 21:01:29.474 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - -
+2025-03-01 21:01:29.549 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-03-01 21:01:29.720 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-03-01 21:01:29.725 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-03-01 21:01:29.764 [DBG] Response markup was updated to include Browser Link script injection.
+2025-03-01 21:01:29.766 [DBG] Response markup was updated to include browser refresh script injection.
+2025-03-01 21:01:29.778 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - - - 200 - text/html;charset=utf-8 313.5345ms
+2025-03-01 21:01:29.829 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - -
+2025-03-01 21:01:29.839 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 10.0265ms
+2025-03-01 21:01:29.884 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - -
+2025-03-01 21:01:30.026 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 142.0502ms
+2025-03-01 21:01:30.088 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - -
+2025-03-01 21:01:30.356 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 267.7213ms
+2025-03-01 21:01:33.788 [DBG] Connection id "0HNAOTC9V3EK9" received FIN.
+2025-03-01 21:01:33.803 [DBG] Connection id "0HNAOTC9V3EK9" is closed. The last processed stream ID was 7.
+2025-03-01 21:01:33.804 [DBG] Connection id "0HNAOTC9V3EK9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-01 21:01:33.808 [DBG] Connection id "0HNAOTC9V3EK9" stopped.
+2025-03-01 21:03:20.266 [DBG] HttpMessageHandler expired after 120000ms for client 'IGroundControlClient'
+2025-03-01 21:03:30.280 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-03-01 21:03:30.289 [DBG] Ending HttpMessageHandler cleanup cycle after 0.2496ms - processed: 0 items - remaining: 1 items
+2025-03-01 21:03:40.303 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-03-01 21:03:40.316 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0022ms - processed: 0 items - remaining: 1 items
+2025-03-01 21:03:50.329 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-03-01 21:03:50.330 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0026ms - processed: 0 items - remaining: 1 items
+2025-03-01 21:04:00.342 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-03-01 21:04:00.343 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0022ms - processed: 0 items - remaining: 1 items
+2025-03-01 21:04:39.329 [INF] Инициируем регистрацию транспортного средства №1
+2025-03-01 21:04:39.430 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-01 21:04:39.460 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-01 21:04:39.468 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-01 21:04:40.260 [INF] Received HTTP response headers after 785.0738ms - 200
+2025-03-01 21:04:40.266 [INF] End processing HTTP request after 830.2301ms - 200
+2025-03-01 21:04:40.272 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-01 21:04:40.514 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_7","VehicleId":"charging_7","ServiceSpots":{"parking_1":"parking_1_charging_7","parking_2":"parking_2_charging_7"}}
+2025-03-01 21:04:40.515 [INF] Транспортное средство charging_7 зарегистрировано. Гараж: garrage_charging_7. ServiceSpots: {"parking_1":"parking_1_charging_7","parking_2":"parking_2_charging_7"}
+2025-03-01 21:04:40.517 [INF] Инициируем регистрацию транспортного средства №2
+2025-03-01 21:04:40.518 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-01 21:04:40.519 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-01 21:04:40.520 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-01 21:04:40.656 [INF] Received HTTP response headers after 135.139ms - 200
+2025-03-01 21:04:40.657 [INF] End processing HTTP request after 137.8797ms - 200
+2025-03-01 21:04:40.658 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-01 21:04:40.659 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_8","VehicleId":"charging_8","ServiceSpots":{"parking_1":"parking_1_charging_8","parking_2":"parking_2_charging_8"}}
+2025-03-01 21:04:40.659 [INF] Транспортное средство charging_8 зарегистрировано. Гараж: garrage_charging_8. ServiceSpots: {"parking_1":"parking_1_charging_8","parking_2":"parking_2_charging_8"}
+2025-03-01 21:04:40.660 [INF] Инициируем регистрацию транспортного средства №3
+2025-03-01 21:04:40.661 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-01 21:04:40.661 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-01 21:04:40.662 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-01 21:04:40.785 [INF] Received HTTP response headers after 122.083ms - 200
+2025-03-01 21:04:40.786 [INF] End processing HTTP request after 124.6526ms - 200
+2025-03-01 21:04:40.787 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-01 21:04:40.788 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_9","VehicleId":"charging_9","ServiceSpots":{"parking_1":"parking_1_charging_9","parking_2":"parking_2_charging_9"}}
+2025-03-01 21:04:40.791 [INF] Транспортное средство charging_9 зарегистрировано. Гараж: garrage_charging_9. ServiceSpots: {"parking_1":"parking_1_charging_9","parking_2":"parking_2_charging_9"}
+2025-03-01 21:04:41.043 [INF] Now listening on: https://localhost:7163
+2025-03-01 21:04:41.044 [INF] Now listening on: http://localhost:5117
+2025-03-01 21:04:41.045 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-01 21:04:41.045 [INF] Hosting environment: Development
+2025-03-01 21:04:41.046 [INF] Content root path: C:\Users\Юля\source\repos\WebApplication7\WebApplication7\
+2025-03-01 21:04:44.222 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - -
+2025-03-01 21:04:44.514 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - - - 200 - text/html;charset=utf-8 306.9903ms
+2025-03-01 21:04:45.215 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - -
+2025-03-01 21:04:45.215 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - -
+2025-03-01 21:04:45.226 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 11.3195ms
+2025-03-01 21:04:45.305 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 89.5669ms
+2025-03-01 21:04:45.649 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - -
+2025-03-01 21:04:45.887 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 237.2710ms

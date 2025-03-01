@@ -3,21 +3,34 @@ using ChargeModule.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using Serilog;
 using System;
+
+var logFilePath = $"Logs/log-{DateTime.Now:yyyy-MM-dd}.txt";
+
+// Настройка Serilog: вывод логов в консоль и в файл, минимальный уровень – Information
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information() // Только Information и выше (Debug не выводятся)
+    .Enrich.FromLogContext()
+    .WriteTo.Console(
+        outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff} [{Level:u3}] {Message:lj}{NewLine}{Exception}")
+    .WriteTo.File(
+        logFilePath,
+        rollingInterval: RollingInterval.Day,
+        outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff} [{Level:u3}] {Message:lj}{NewLine}{Exception}")
+    .CreateLogger();
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Добавление сервисов контроллеров
+// Используем Serilog в качестве провайдера логирования
+builder.Host.UseSerilog();
+
+// Добавляем сервисы контроллеров
 builder.Services.AddControllers();
 
-// Добавляем поддержку Swagger
+// Поддержка Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
-// Настройка логирования: все сообщения на русском языке
-builder.Logging.ClearProviders();
-builder.Logging.AddConsole();
 
 // Регистрация HttpClient для работы с API Ground Control
 builder.Services.AddHttpClient<IGroundControlClient, GroundControlClient>(client =>
@@ -30,7 +43,7 @@ builder.Services.AddSingleton<IChargeService, ChargeService>();
 
 var app = builder.Build();
 
-// Включаем middleware Swagger в режиме разработки
+// Подключаем Swagger в режиме разработки
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -39,12 +52,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseRouting();
 
-// Добавляем наше middleware для логирования запросов и ответов
+// Добавляем middleware для логирования запросов и ответов
 app.UseMiddleware<RequestResponseLoggingMiddleware>();
 
 app.MapControllers();
 
-// Инициализация сервисных машин зарядки при старте приложения
+// Инициализация транспортных средств при запуске
 var chargeService = app.Services.GetRequiredService<IChargeService>();
 await chargeService.InitializeVehiclesAsync();
 
