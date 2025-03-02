@@ -3,11 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|c:\\users\\\u044E\u043B\u044F\\documents\\github\\charge\\webapplication7\\models\\adminconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|solutionrelative:webapplication7\\models\\adminconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|c:\\users\\\u044E\u043B\u044F\\documents\\github\\charge\\webapplication7\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\webapplication7\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|solutionrelative:webapplication7\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,40 +11,44 @@
       "RelativeMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|solutionrelative:webapplication7\\services\\groundcontrolclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|c:\\users\\\u044E\u043B\u044F\\documents\\github\\charge\\webapplication7\\services\\chargeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\webapplication7\\services\\chargeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|solutionrelative:webapplication7\\services\\chargeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\webapplication7\\controllers\\chargecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|solutionrelative:webapplication7\\controllers\\chargecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\webapplication7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|solutionrelative:webapplication7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\webapplication7\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|solutionrelative:webapplication7\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\webapplication7\\middleware\\requestresponseloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|solutionrelative:webapplication7\\middleware\\requestresponseloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|c:\\users\\\u044E\u043B\u044F\\documents\\github\\charge\\webapplication7\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\webapplication7\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|solutionrelative:webapplication7\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\webapplication7\\services\\adminconfigservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|solutionrelative:webapplication7\\services\\adminconfigservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\webapplication7\\models\\chargingmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|solutionrelative:webapplication7\\models\\chargingmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|c:\\users\\\u044E\u043B\u044F\\documents\\github\\charge\\webapplication7\\services\\adminconfigservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|solutionrelative:webapplication7\\services\\adminconfigservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\webapplication7\\models\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|solutionrelative:webapplication7\\models\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|c:\\users\\\u044E\u043B\u044F\\documents\\github\\charge\\webapplication7\\models\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|solutionrelative:webapplication7\\models\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|c:\\users\\\u044E\u043B\u044F\\documents\\github\\charge\\webapplication7\\models\\adminconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|solutionrelative:webapplication7\\models\\adminconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\webapplication7\\middleware\\requestresponseloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|solutionrelative:webapplication7\\middleware\\requestresponseloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\webapplication7\\controllers\\chargecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|solutionrelative:webapplication7\\controllers\\chargecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\webapplication7\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4B9D77E0-6464-4AF5-A23A-C9507C955F60}|WebApplication7\\WebApplication7.csproj|solutionrelative:webapplication7\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,17 +58,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "ChargeController.cs",
               "DocumentMoniker": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Controllers\\ChargeController.cs",
               "RelativeDocumentMoniker": "WebApplication7\\Controllers\\ChargeController.cs",
               "ToolTip": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Controllers\\ChargeController.cs",
               "RelativeToolTip": "WebApplication7\\Controllers\\ChargeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAiwEEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T13:47:56.419Z",
               "IsPinned": true,
@@ -76,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "RequestResponseLoggingMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Middleware\\RequestResponseLoggingMiddleware.cs",
               "RelativeDocumentMoniker": "WebApplication7\\Middleware\\RequestResponseLoggingMiddleware.cs",
@@ -90,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "ChargingModels.cs",
               "DocumentMoniker": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Models\\ChargingModels.cs",
               "RelativeDocumentMoniker": "WebApplication7\\Models\\ChargingModels.cs",
@@ -104,13 +104,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ChargeService.cs",
               "DocumentMoniker": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Services\\ChargeService.cs",
               "RelativeDocumentMoniker": "WebApplication7\\Services\\ChargeService.cs",
               "ToolTip": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Services\\ChargeService.cs",
               "RelativeToolTip": "WebApplication7\\Services\\ChargeService.cs",
-              "ViewState": "AQIAAJYAAAAAAAAAAAAIwKgAAABRAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAPsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T13:48:20.57Z",
               "IsPinned": true,
@@ -118,13 +118,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "GroundControlClient.cs",
               "DocumentMoniker": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Services\\GroundControlClient.cs",
               "RelativeDocumentMoniker": "WebApplication7\\Services\\GroundControlClient.cs",
               "ToolTip": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Services\\GroundControlClient.cs",
               "RelativeToolTip": "WebApplication7\\Services\\GroundControlClient.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAswEgAAAAOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T13:48:23.231Z",
               "IsPinned": true,
@@ -132,13 +132,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Program.cs",
               "RelativeDocumentMoniker": "WebApplication7\\Program.cs",
               "ToolTip": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Program.cs",
               "RelativeToolTip": "WebApplication7\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACUAAAAhAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAswCcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T13:48:26.002Z",
               "IsPinned": true,
@@ -146,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\appsettings.json",
               "RelativeDocumentMoniker": "WebApplication7\\appsettings.json",
@@ -155,25 +155,11 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-03-02T13:48:33.091Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebApplication7\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "WebApplication7\\Views\\Admin\\Index.cshtml",
-              "ViewState": "AQIAACwAAAAAAAAAAAAmwGAAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-02T15:17:56.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "AdminViewModel.cs",
               "DocumentMoniker": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Models\\AdminViewModel.cs",
               "RelativeDocumentMoniker": "WebApplication7\\Models\\AdminViewModel.cs",
@@ -186,33 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminConfig.cs",
-              "DocumentMoniker": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Models\\AdminConfig.cs",
-              "RelativeDocumentMoniker": "WebApplication7\\Models\\AdminConfig.cs",
-              "ToolTip": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Models\\AdminConfig.cs",
-              "RelativeToolTip": "WebApplication7\\Models\\AdminConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T15:12:39.808Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "WebApplication7\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "WebApplication7\\Controllers\\AdminController.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAgwE0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T15:15:07.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "AdminConfigService.cs",
               "DocumentMoniker": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Services\\AdminConfigService.cs",
               "RelativeDocumentMoniker": "WebApplication7\\Services\\AdminConfigService.cs",
@@ -221,6 +181,45 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T15:13:15.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication7\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "WebApplication7\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAAGAAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-02T15:17:56.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "WebApplication7\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "WebApplication7\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAqwFcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T15:15:07.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminConfig.cs",
+              "DocumentMoniker": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Models\\AdminConfig.cs",
+              "RelativeDocumentMoniker": "WebApplication7\\Models\\AdminConfig.cs",
+              "ToolTip": "C:\\Users\\\u042E\u043B\u044F\\Documents\\GitHub\\charge\\WebApplication7\\Models\\AdminConfig.cs",
+              "RelativeToolTip": "WebApplication7\\Models\\AdminConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T15:12:39.808Z",
               "EditorCaption": ""
             }
           ]

@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace ChargeModule.Controllers
 {
+    // Контроллер для администрирования системы зарядки
     [Route("charge/admin")]
     public class AdminController : Controller
     {
@@ -15,6 +16,7 @@ namespace ChargeModule.Controllers
         private readonly IChargeService _chargeService;
         private readonly ILogger<AdminController> _logger;
 
+        // Конструктор контроллера, принимает зависимости через DI
         public AdminController(IAdminConfigService adminConfigService, IChargeService chargeService, ILogger<AdminController> logger)
         {
             _adminConfigService = adminConfigService;
@@ -22,6 +24,7 @@ namespace ChargeModule.Controllers
             _logger = logger;
         }
 
+        // Отображает страницу админки (GET /charge/admin)
         [HttpGet]
         public IActionResult Index()
         {
@@ -33,12 +36,15 @@ namespace ChargeModule.Controllers
             return View(model);
         }
 
+        // Обновляет параметры конфигурации (POST /charge/admin/update)
         [HttpPost("update")]
         public async Task<IActionResult> Update()
         {
+            // Логируем тело запроса
             string requestBody = await ReadRequestBody();
             _logger.LogInformation("Запрос обновления конфигурации:\n{RequestBody}", requestBody);
 
+            // Обновляем конфигурацию
             var config = new AdminConfig
             {
                 MovementSpeed = double.Parse(Request.Form["MovementSpeed"]),
@@ -50,12 +56,15 @@ namespace ChargeModule.Controllers
             return RedirectToAction("Index");
         }
 
+        // Запрос на регистрацию новой машины (POST /charge/admin/registerVehicle)
         [HttpPost("registerVehicle")]
         public async Task<IActionResult> RegisterVehicle()
         {
+            // Логируем тело запроса
             string requestBody = await ReadRequestBody();
             _logger.LogInformation("Запрос регистрации транспортного средства:\n{RequestBody}", requestBody);
 
+            // Извлекаем тип машины из формы
             string type = Request.Form["Type"];
             await _chargeService.RegisterVehicleAsync(type);
             _logger.LogInformation("Запрос на регистрацию транспортного средства типа {Type} успешно обработан.", type);
@@ -63,6 +72,7 @@ namespace ChargeModule.Controllers
             return RedirectToAction("Index");
         }
 
+        // Метод для чтения тела запроса
         private async Task<string> ReadRequestBody()
         {
             Request.EnableBuffering();
