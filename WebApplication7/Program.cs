@@ -6,59 +6,46 @@ using Microsoft.Extensions.Hosting;
 using Serilog;
 using System;
 
-var logFilePath = $"Logs/log-{DateTime.Now:yyyy-MM-dd}.txt";
+var builder = WebApplication.CreateBuilder(args);
 
-// Настройка Serilog: вывод логов в консоль и в файл, минимальный уровень – Information
+// Настройка Serilog (как в предыдущем примере)
+var logFilePath = $"Logs/log-{DateTime.Now:yyyy-MM-dd}.txt";
 Log.Logger = new LoggerConfiguration()
-    .MinimumLevel.Information() // Только Information и выше (Debug не выводятся)
+    .MinimumLevel.Information()
     .Enrich.FromLogContext()
-    .WriteTo.Console(
-        outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff} [{Level:u3}] {Message:lj}{NewLine}{Exception}")
-    .WriteTo.File(
-        logFilePath,
-        rollingInterval: RollingInterval.Day,
+    .WriteTo.Console(outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff} [{Level:u3}] {Message:lj}{NewLine}{Exception}")
+    .WriteTo.File(logFilePath, rollingInterval: RollingInterval.Day,
         outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff} [{Level:u3}] {Message:lj}{NewLine}{Exception}")
     .CreateLogger();
 
-var builder = WebApplication.CreateBuilder(args);
-
-// Используем Serilog в качестве провайдера логирования
 builder.Host.UseSerilog();
 
-// Добавляем сервисы контроллеров
-builder.Services.AddControllers();
-
-// Поддержка Swagger
-builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Регистрация HttpClient для работы с API Ground Control
+// Добавляем контроллеры и представления
+builder.Services.AddControllersWithViews();
+
+// Регистрируем сервисы
 builder.Services.AddHttpClient<IGroundControlClient, GroundControlClient>(client =>
 {
     client.BaseAddress = new Uri("https://ground-control.reaport.ru");
 });
-
-// Регистрация сервисного слоя
+builder.Services.AddSingleton<IAdminConfigService, AdminConfigService>();
 builder.Services.AddSingleton<IChargeService, ChargeService>();
 
 var app = builder.Build();
 
-// Подключаем Swagger в режиме разработки
+var chargeService = app.Services.GetRequiredService<IChargeService>();
+await chargeService.InitializeVehiclesAsync();
+
 if (app.Environment.IsDevelopment())
 {
+    app.UseDeveloperExceptionPage();
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
 app.UseRouting();
-
-// Добавляем middleware для логирования запросов и ответов
-app.UseMiddleware<RequestResponseLoggingMiddleware>();
-
+app.UseStaticFiles();
 app.MapControllers();
-
-// Инициализация транспортных средств при запуске
-var chargeService = app.Services.GetRequiredService<IChargeService>();
-await chargeService.InitializeVehiclesAsync();
-
 app.Run();

@@ -12,12 +12,14 @@ namespace ChargeModule.Services
 {
     public interface IChargeService
     {
-        // Инициализация: регистрация машин зарядки
-        Task InitializeVehiclesAsync();
-        // Обработка запроса на зарядку
         Task<ChargingResponse> ProcessChargingRequestAsync(ChargingRequest request, CancellationToken cancellationToken = default);
-        // Завершение зарядки – возврат машины в гараж
         Task ProcessChargingCompletionAsync(ChargingCompletionRequest request);
+        Task InitializeVehiclesAsync();
+
+        // Методы для админки:
+        IEnumerable<ChargingVehicleInfo> GetVehiclesInfo();
+        bool AddVehicle(ChargingVehicle vehicle);
+        Task RegisterVehicleAsync(string type);
     }
 
     public class ChargeService : IChargeService
@@ -28,16 +30,20 @@ namespace ChargeModule.Services
         private readonly object _lock = new object();
         private const int VehicleCount = 3;
         private const string VehicleType = "charging";
-        // Скорость движения: единиц расстояния в секунду (например, 10)
-        private readonly double _travelSpeed;
         // Словарь для хранения связи между узлом парковки самолёта и назначенной машиной
         private readonly ConcurrentDictionary<string, string> _activeChargingRequests = new ConcurrentDictionary<string, string>();
+        private readonly IAdminConfigService _adminConfigService;
 
-        public ChargeService(IGroundControlClient groundControlClient, ILogger<ChargeService> logger)
+        public ChargeService(IGroundControlClient groundControlClient, ILogger<ChargeService> logger, IAdminConfigService adminConfigService)
         {
             _groundControlClient = groundControlClient;
             _logger = logger;
-            _travelSpeed = 20.0;
+            _adminConfigService = adminConfigService;
+        }
+
+        public bool AddVehicle(ChargingVehicle vehicle)
+        {
+            return _vehicles.TryAdd(vehicle.VehicleId, vehicle);
         }
 
         public async Task<ChargingResponse> ProcessChargingRequestAsync(ChargingRequest request, CancellationToken cancellationToken = default)
@@ -74,7 +80,7 @@ namespace ChargeModule.Services
                 return new ChargingResponse { Wait = true };
             }
 
-            // При назначении в ProcessChargingRequestAsync, после успешного назначения:
+            // При назначении сохраняем связь
             _activeChargingRequests[request.NodeId] = availableVehicle.VehicleId;
 
             // Текущая позиция – гараж транспортного средства
@@ -92,6 +98,9 @@ namespace ChargeModule.Services
 
             _logger.LogInformation("Полученный маршрут от {CurrentPosition} до {TargetPosition}: {Route}", currentPosition, targetPosition, string.Join(" -> ", route));
 
+            // Получаем скорость движения из конфигурации
+            double travelSpeed = _adminConfigService.GetConfig().MovementSpeed;
+
             // Перемещаем транспортное средство по сегментам маршрута с учетом заданной скорости
             for (int i = 0; i < route.Count - 1; i++)
             {
@@ -101,7 +110,7 @@ namespace ChargeModule.Services
                 double distance = await _groundControlClient.RequestMoveAsync(availableVehicle.VehicleId, VehicleType, fromNode, toNode);
                 _logger.LogInformation("Запрос перемещения от {FromNode} до {ToNode} разрешен. Расстояние: {Distance}", fromNode, toNode, distance);
 
-                double delaySeconds = distance / _travelSpeed;
+                double delaySeconds = distance / travelSpeed;
                 _logger.LogInformation("Ожидание {DelaySeconds} секунд для прохождения сегмента.", delaySeconds);
                 await Task.Delay(TimeSpan.FromSeconds(delaySeconds), cancellationToken);
 
@@ -129,12 +138,11 @@ namespace ChargeModule.Services
                 throw new Exception("Нет транспортного средства, обслуживающего данный запрос");
             }
 
-            // Удаляем связь, т.к. запрос завершения обрабатывается
             _activeChargingRequests.TryRemove(request.NodeId, out _);
 
-            // Текущая позиция – сервисный узел, привязанный к данному request.NodeId (например, "parking_1_charging_1")
+            // Текущая позиция – сервисный узел, привязанный к данному request.NodeId
             string currentPosition = vehicle.ServiceSpots[request.NodeId];
-            // Целевая точка – гараж транспортного средства (например, "garrage_charging_1")
+            // Целевая точка – гараж транспортного средства
             string garageSpot = vehicle.GarrageNodeId;
 
             _logger.LogInformation("Запрашиваем маршрут от {CurrentPosition} до {GarageSpot} для транспортного средства {VehicleId}",
@@ -149,6 +157,8 @@ namespace ChargeModule.Services
             _logger.LogInformation("Полученный маршрут от {CurrentPosition} до {GarageSpot}: {Route}",
                 currentPosition, garageSpot, string.Join(" -> ", route));
 
+            double travelSpeed = _adminConfigService.GetConfig().MovementSpeed;
+
             if (route.Count > 1)
             {
                 for (int i = 0; i < route.Count - 1; i++)
@@ -159,7 +169,7 @@ namespace ChargeModule.Services
                     double distance = await _groundControlClient.RequestMoveAsync(vehicle.VehicleId, VehicleType, fromNode, toNode);
                     _logger.LogInformation("Запрос перемещения от {FromNode} до {ToNode} разрешен. Расстояние: {Distance}", fromNode, toNode, distance);
 
-                    double delaySeconds = distance / _travelSpeed;
+                    double delaySeconds = distance / travelSpeed;
                     _logger.LogInformation("Ожидание {DelaySeconds} секунд для прохождения сегмента.", delaySeconds);
                     await Task.Delay(TimeSpan.FromSeconds(delaySeconds));
 
@@ -177,6 +187,40 @@ namespace ChargeModule.Services
             }
             _logger.LogInformation("Транспортное средство {VehicleId} теперь свободно в гараже.", vehicle.VehicleId);
         }
+
+        // Метод для получения списка машин для админки
+        public IEnumerable<ChargingVehicleInfo> GetVehiclesInfo()
+        {
+            return _vehicles.Values.Select(v => new ChargingVehicleInfo
+            {
+                VehicleId = v.VehicleId,
+                Status = v.State.ToString(),
+                // Текущее местоположение можно определять по наличию машины в сервисном узле или гараже
+                CurrentNode = v.State == VehicleState.Free ? v.GarrageNodeId : v.ServiceSpots.First().Value
+            });
+        }
+
+        public async Task RegisterVehicleAsync(string type)
+        {
+            // Вызываем регистрацию через ground control API
+            var registration = await _groundControlClient.RegisterVehicleAsync(type);
+            var vehicle = new ChargingVehicle
+            {
+                VehicleId = registration.VehicleId,
+                GarrageNodeId = registration.GarrageNodeId,
+                ServiceSpots = registration.ServiceSpots,
+                State = VehicleState.Free
+            };
+            if (_vehicles.TryAdd(vehicle.VehicleId, vehicle))
+            {
+                _logger.LogInformation("Транспортное средство {VehicleId} зарегистрировано через админку.", vehicle.VehicleId);
+            }
+            else
+            {
+                _logger.LogError("Не удалось добавить транспортное средство {VehicleId}.", vehicle.VehicleId);
+            }
+        }
+
 
         public async Task InitializeVehiclesAsync()
         {

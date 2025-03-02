@@ -77,6 +77,7 @@ namespace ChargeModule.Services
             HttpResponseMessage response = null;
             int retryCount = 0;
             const int maxRetries = 15;
+
             while (true)
             {
                 response = await _httpClient.PostAsJsonAsync("/move", requestPayload);

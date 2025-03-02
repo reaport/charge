@@ -2400,3 +2400,1219 @@ System.Net.Http.HttpRequestException: Response status code does not indicate suc
 2025-03-02 18:02:48.061 [INF] Отправлен ответ: 204
 Тело ответа: 
 2025-03-02 18:02:48.063 [INF] Request finished HTTP/2 POST https://localhost:7163/Charge/complete application/json 27 - 204 - - 11552.5640ms
+2025-03-02 18:19:26.574 [INF] User profile is available. Using 'C:\Users\Юля\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-02 18:19:26.750 [INF] Creating key {ae4e9c06-c372-4a73-b096-ee17d5022a8e} with creation date 2025-03-02 15:19:26Z, activation date 2025-03-02 15:19:26Z, and expiration date 2025-05-31 15:19:26Z.
+2025-03-02 18:19:26.837 [INF] Writing data to file 'C:\Users\Юля\AppData\Local\ASP.NET\DataProtection-Keys\key-ae4e9c06-c372-4a73-b096-ee17d5022a8e.xml'.
+2025-03-02 18:19:27.624 [INF] Now listening on: https://localhost:7163
+2025-03-02 18:19:27.626 [INF] Now listening on: http://localhost:5117
+2025-03-02 18:19:27.638 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-02 18:19:27.640 [INF] Hosting environment: Development
+2025-03-02 18:19:27.642 [INF] Content root path: C:\Users\Юля\Documents\GitHub\charge\WebApplication7\
+2025-03-02 18:19:29.656 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - -
+2025-03-02 18:19:31.236 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method1(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-02 18:19:31.967 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - - - 500 - text/html;+charset=utf-8 2325.9640ms
+2025-03-02 18:19:32.607 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:19:32.607 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - -
+2025-03-02 18:19:34.768 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 2160.4886ms
+2025-03-02 18:19:34.975 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 2367.5984ms
+2025-03-02 18:19:35.191 [INF] Request starting HTTP/2 GET https://localhost:7163/favicon.ico - -
+2025-03-02 18:19:35.212 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method1(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-02 18:19:35.248 [INF] Request finished HTTP/2 GET https://localhost:7163/favicon.ico - - - 500 - text/plain;+charset=utf-8 58.4157ms
+2025-03-02 18:24:12.733 [INF] User profile is available. Using 'C:\Users\Юля\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-02 18:24:13.248 [INF] Now listening on: https://localhost:7163
+2025-03-02 18:24:13.249 [INF] Now listening on: http://localhost:5117
+2025-03-02 18:24:13.255 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-02 18:24:13.256 [INF] Hosting environment: Development
+2025-03-02 18:24:13.257 [INF] Content root path: C:\Users\Юля\Documents\GitHub\charge\WebApplication7\
+2025-03-02 18:24:14.035 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - -
+2025-03-02 18:24:14.695 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - - - 200 - text/html;charset=utf-8 674.7114ms
+2025-03-02 18:24:14.770 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:24:14.783 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 13.7647ms
+2025-03-02 18:24:14.955 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - -
+2025-03-02 18:24:15.133 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 177.4918ms
+2025-03-02 18:24:15.242 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - -
+2025-03-02 18:24:15.689 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 447.5295ms
+2025-03-02 18:24:58.809 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:24:58.880 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:24:58.938 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:24:58.965 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 11.0315ms
+2025-03-02 18:24:58.982 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:24:58.998 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'ChargeModule.Services.ChargeService' while attempting to activate 'ChargeModule.Controllers.AdminController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-02 18:24:59.201 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 500 - text/html;+charset=utf-8 391.2993ms
+2025-03-02 18:24:59.378 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:24:59.381 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:24:59.400 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 21.0184ms
+2025-03-02 18:24:59.474 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 106.5199ms
+2025-03-02 18:24:59.720 [INF] Request starting HTTP/1.1 GET http://localhost:5117/favicon.ico - -
+2025-03-02 18:24:59.724 [INF] Request finished HTTP/1.1 GET http://localhost:5117/favicon.ico - - - 404 0 - 4.0830ms
+2025-03-02 18:31:47.621 [INF] Инициируем регистрацию транспортного средства №1
+2025-03-02 18:31:47.790 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-02 18:31:47.829 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:31:47.839 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:31:48.631 [INF] Received HTTP response headers after 786.205ms - 200
+2025-03-02 18:31:48.637 [INF] End processing HTTP request after 838.9898ms - 200
+2025-03-02 18:31:48.646 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-02 18:31:48.960 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_4","VehicleId":"charging_4","ServiceSpots":{"parking_1":"parking_1_charging_4","parking_2":"parking_2_charging_4"}}
+2025-03-02 18:31:48.961 [INF] Транспортное средство charging_4 зарегистрировано. Гараж: garrage_charging_4. ServiceSpots: {"parking_1":"parking_1_charging_4","parking_2":"parking_2_charging_4"}
+2025-03-02 18:31:48.963 [INF] Инициируем регистрацию транспортного средства №2
+2025-03-02 18:31:48.963 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-02 18:31:48.964 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:31:48.965 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:31:49.078 [INF] Received HTTP response headers after 112.0648ms - 200
+2025-03-02 18:31:49.079 [INF] End processing HTTP request after 115.1829ms - 200
+2025-03-02 18:31:49.080 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-02 18:31:49.081 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_5","VehicleId":"charging_5","ServiceSpots":{"parking_1":"parking_1_charging_5","parking_2":"parking_2_charging_5"}}
+2025-03-02 18:31:49.082 [INF] Транспортное средство charging_5 зарегистрировано. Гараж: garrage_charging_5. ServiceSpots: {"parking_1":"parking_1_charging_5","parking_2":"parking_2_charging_5"}
+2025-03-02 18:31:49.083 [INF] Инициируем регистрацию транспортного средства №3
+2025-03-02 18:31:49.084 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-02 18:31:49.085 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:31:49.086 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:31:49.205 [INF] Received HTTP response headers after 118.7679ms - 200
+2025-03-02 18:31:49.206 [INF] End processing HTTP request after 121.5262ms - 200
+2025-03-02 18:31:49.208 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-02 18:31:49.209 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_6","VehicleId":"charging_6","ServiceSpots":{"parking_1":"parking_1_charging_6","parking_2":"parking_2_charging_6"}}
+2025-03-02 18:31:49.211 [INF] Транспортное средство charging_6 зарегистрировано. Гараж: garrage_charging_6. ServiceSpots: {"parking_1":"parking_1_charging_6","parking_2":"parking_2_charging_6"}
+2025-03-02 18:31:49.543 [INF] User profile is available. Using 'C:\Users\Юля\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-02 18:31:49.880 [INF] Now listening on: https://localhost:7163
+2025-03-02 18:31:49.881 [INF] Now listening on: http://localhost:5117
+2025-03-02 18:31:49.883 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-02 18:31:49.884 [INF] Hosting environment: Development
+2025-03-02 18:31:49.885 [INF] Content root path: C:\Users\Юля\Documents\GitHub\charge\WebApplication7\
+2025-03-02 18:31:50.827 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - -
+2025-03-02 18:31:51.197 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - - - 200 - text/html;charset=utf-8 383.3195ms
+2025-03-02 18:31:51.279 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:31:51.295 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 15.6386ms
+2025-03-02 18:31:51.439 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - -
+2025-03-02 18:31:51.588 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 148.5131ms
+2025-03-02 18:31:51.715 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - -
+2025-03-02 18:31:52.726 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1011.2916ms
+2025-03-02 18:33:40.591 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:33:40.671 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:33:40.700 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:33:40.731 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:33:40.786 [INF] Executed ViewResult - view Index executed in 57.4925ms.
+2025-03-02 18:33:40.789 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 81.2112ms
+2025-03-02 18:33:40.795 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:33:40.808 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 217.2394ms
+2025-03-02 18:33:40.848 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:33:40.853 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:33:40.871 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 21.0032ms
+2025-03-02 18:33:40.907 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.7090ms
+2025-03-02 18:36:17.714 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37
+2025-03-02 18:36:17.729 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:17.750 [INF] Route matched with {action = "Update", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(ChargeModule.Models.AdminConfig) on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:17.798 [INF] Конфигурация обновлена: скорость = 10, попыток = 5
+2025-03-02 18:36:17.837 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 18:36:17.838 [INF] Executed action ChargeModule.Controllers.AdminController.Update (WebApplication7) in 85.4301ms
+2025-03-02 18:36:17.841 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:17.842 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37 - 302 0 - 127.9623ms
+2025-03-02 18:36:17.848 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:36:17.850 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:17.851 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:17.854 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:36:17.858 [INF] Executed ViewResult - view Index executed in 4.0564ms.
+2025-03-02 18:36:17.859 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 5.4259ms
+2025-03-02 18:36:17.861 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:17.863 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 15.1668ms
+2025-03-02 18:36:17.902 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:36:17.904 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:36:17.917 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 13.3051ms
+2025-03-02 18:36:17.939 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.6328ms
+2025-03-02 18:36:19.804 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37
+2025-03-02 18:36:19.808 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:19.809 [INF] Route matched with {action = "Update", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(ChargeModule.Models.AdminConfig) on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:19.815 [INF] Конфигурация обновлена: скорость = 10, попыток = 5
+2025-03-02 18:36:19.816 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 18:36:19.819 [INF] Executed action ChargeModule.Controllers.AdminController.Update (WebApplication7) in 6.3059ms
+2025-03-02 18:36:19.822 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:19.823 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37 - 302 0 - 19.3901ms
+2025-03-02 18:36:19.827 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:36:19.835 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:19.836 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:19.839 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:36:19.842 [INF] Executed ViewResult - view Index executed in 3.4478ms.
+2025-03-02 18:36:19.845 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 6.074ms
+2025-03-02 18:36:19.848 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:19.852 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 25.1039ms
+2025-03-02 18:36:19.883 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:36:19.884 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:36:19.902 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 17.6517ms
+2025-03-02 18:36:19.905 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.9963ms
+2025-03-02 18:36:20.809 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37
+2025-03-02 18:36:20.814 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:20.815 [INF] Route matched with {action = "Update", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(ChargeModule.Models.AdminConfig) on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:20.818 [INF] Конфигурация обновлена: скорость = 10, попыток = 5
+2025-03-02 18:36:20.819 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 18:36:20.820 [INF] Executed action ChargeModule.Controllers.AdminController.Update (WebApplication7) in 2.4744ms
+2025-03-02 18:36:20.822 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:20.827 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37 - 302 0 - 17.3422ms
+2025-03-02 18:36:20.832 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:36:20.835 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:20.836 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:20.843 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:36:20.848 [INF] Executed ViewResult - view Index executed in 5.5708ms.
+2025-03-02 18:36:20.866 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 23.2605ms
+2025-03-02 18:36:20.868 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:20.873 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 40.3822ms
+2025-03-02 18:36:20.899 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:36:20.900 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:36:20.906 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 5.4683ms
+2025-03-02 18:36:20.906 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.9771ms
+2025-03-02 18:36:21.595 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37
+2025-03-02 18:36:21.598 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:21.599 [INF] Route matched with {action = "Update", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(ChargeModule.Models.AdminConfig) on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:21.603 [INF] Конфигурация обновлена: скорость = 10, попыток = 5
+2025-03-02 18:36:21.604 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 18:36:21.605 [INF] Executed action ChargeModule.Controllers.AdminController.Update (WebApplication7) in 2.474ms
+2025-03-02 18:36:21.607 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:21.608 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37 - 302 0 - 13.0052ms
+2025-03-02 18:36:21.613 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:36:21.617 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:21.618 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:21.621 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:36:21.622 [INF] Executed ViewResult - view Index executed in 1.1369ms.
+2025-03-02 18:36:21.624 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 2.5942ms
+2025-03-02 18:36:21.626 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:21.627 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 14.3605ms
+2025-03-02 18:36:21.661 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:36:21.665 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:36:21.668 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 3.1481ms
+2025-03-02 18:36:21.668 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.6497ms
+2025-03-02 18:36:22.156 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37
+2025-03-02 18:36:22.160 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:22.161 [INF] Route matched with {action = "Update", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(ChargeModule.Models.AdminConfig) on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:22.165 [INF] Конфигурация обновлена: скорость = 10, попыток = 5
+2025-03-02 18:36:22.166 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 18:36:22.167 [INF] Executed action ChargeModule.Controllers.AdminController.Update (WebApplication7) in 2.2733ms
+2025-03-02 18:36:22.171 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:22.172 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37 - 302 0 - 16.4936ms
+2025-03-02 18:36:22.177 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:36:22.181 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:22.181 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:22.186 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:36:22.187 [INF] Executed ViewResult - view Index executed in 1.2534ms.
+2025-03-02 18:36:22.189 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 2.6841ms
+2025-03-02 18:36:22.191 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:22.192 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 15.1887ms
+2025-03-02 18:36:22.226 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:36:22.231 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:36:22.235 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 9.1303ms
+2025-03-02 18:36:22.236 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 4.5283ms
+2025-03-02 18:36:22.783 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37
+2025-03-02 18:36:22.789 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:22.791 [INF] Route matched with {action = "Update", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(ChargeModule.Models.AdminConfig) on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:22.795 [INF] Конфигурация обновлена: скорость = 10, попыток = 5
+2025-03-02 18:36:22.796 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 18:36:22.798 [INF] Executed action ChargeModule.Controllers.AdminController.Update (WebApplication7) in 2.9026ms
+2025-03-02 18:36:22.800 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:22.801 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37 - 302 0 - 17.8521ms
+2025-03-02 18:36:22.806 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:36:22.809 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:22.810 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:22.813 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:36:22.814 [INF] Executed ViewResult - view Index executed in 1.1833ms.
+2025-03-02 18:36:22.815 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 2.508ms
+2025-03-02 18:36:22.817 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:22.822 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 16.2684ms
+2025-03-02 18:36:22.858 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:36:22.859 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:36:22.863 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 3.9878ms
+2025-03-02 18:36:22.865 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.9839ms
+2025-03-02 18:36:23.426 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37
+2025-03-02 18:36:23.429 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:23.430 [INF] Route matched with {action = "Update", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(ChargeModule.Models.AdminConfig) on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:23.433 [INF] Конфигурация обновлена: скорость = 10, попыток = 5
+2025-03-02 18:36:23.434 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 18:36:23.436 [INF] Executed action ChargeModule.Controllers.AdminController.Update (WebApplication7) in 3.2946ms
+2025-03-02 18:36:23.438 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:23.440 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37 - 302 0 - 13.6240ms
+2025-03-02 18:36:23.445 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:36:23.447 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:23.448 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:23.454 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:36:23.455 [INF] Executed ViewResult - view Index executed in 1.2218ms.
+2025-03-02 18:36:23.457 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 2.7111ms
+2025-03-02 18:36:23.460 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:23.461 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 15.4932ms
+2025-03-02 18:36:23.489 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:36:23.491 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:36:23.496 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 5.1745ms
+2025-03-02 18:36:23.497 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.2110ms
+2025-03-02 18:36:23.847 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37
+2025-03-02 18:36:23.850 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:23.851 [INF] Route matched with {action = "Update", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(ChargeModule.Models.AdminConfig) on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:23.856 [INF] Конфигурация обновлена: скорость = 10, попыток = 5
+2025-03-02 18:36:23.857 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 18:36:23.859 [INF] Executed action ChargeModule.Controllers.AdminController.Update (WebApplication7) in 3.1983ms
+2025-03-02 18:36:23.861 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:23.862 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37 - 302 0 - 15.2231ms
+2025-03-02 18:36:23.866 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:36:23.868 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:23.869 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:23.877 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:36:23.879 [INF] Executed ViewResult - view Index executed in 1.4377ms.
+2025-03-02 18:36:23.880 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 2.8577ms
+2025-03-02 18:36:23.882 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:23.884 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 17.1028ms
+2025-03-02 18:36:23.915 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:36:23.916 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:36:23.924 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 3.9748ms
+2025-03-02 18:36:23.934 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.9444ms
+2025-03-02 18:36:24.360 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37
+2025-03-02 18:36:24.363 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:24.364 [INF] Route matched with {action = "Update", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(ChargeModule.Models.AdminConfig) on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:24.368 [INF] Конфигурация обновлена: скорость = 10, попыток = 5
+2025-03-02 18:36:24.369 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 18:36:24.370 [INF] Executed action ChargeModule.Controllers.AdminController.Update (WebApplication7) in 2.3802ms
+2025-03-02 18:36:24.372 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:24.373 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37 - 302 0 - 13.5741ms
+2025-03-02 18:36:24.378 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:36:24.382 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:24.383 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:24.386 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:36:24.387 [INF] Executed ViewResult - view Index executed in 1.2762ms.
+2025-03-02 18:36:24.388 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 2.6256ms
+2025-03-02 18:36:24.390 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:24.391 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 13.2904ms
+2025-03-02 18:36:24.427 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:36:24.428 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:36:24.432 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 4.4443ms
+2025-03-02 18:36:24.434 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.3654ms
+2025-03-02 18:36:24.577 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37
+2025-03-02 18:36:24.580 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:24.581 [INF] Route matched with {action = "Update", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(ChargeModule.Models.AdminConfig) on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:24.586 [INF] Конфигурация обновлена: скорость = 10, попыток = 5
+2025-03-02 18:36:24.587 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 18:36:24.588 [INF] Executed action ChargeModule.Controllers.AdminController.Update (WebApplication7) in 2.3084ms
+2025-03-02 18:36:24.591 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:24.592 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37 - 302 0 - 15.5700ms
+2025-03-02 18:36:24.596 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:36:24.598 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:24.599 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:24.605 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:36:24.607 [INF] Executed ViewResult - view Index executed in 2.0176ms.
+2025-03-02 18:36:24.609 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 4.1582ms
+2025-03-02 18:36:24.612 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:24.613 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 16.6580ms
+2025-03-02 18:36:24.648 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:36:24.650 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:36:24.654 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 4.0759ms
+2025-03-02 18:36:24.659 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.5210ms
+2025-03-02 18:36:24.964 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37
+2025-03-02 18:36:24.967 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:24.968 [INF] Route matched with {action = "Update", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(ChargeModule.Models.AdminConfig) on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:24.972 [INF] Конфигурация обновлена: скорость = 10, попыток = 5
+2025-03-02 18:36:24.973 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 18:36:24.977 [INF] Executed action ChargeModule.Controllers.AdminController.Update (WebApplication7) in 5.4458ms
+2025-03-02 18:36:24.979 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:24.980 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37 - 302 0 - 15.9698ms
+2025-03-02 18:36:24.983 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:36:24.985 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:24.986 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:24.989 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:36:24.993 [INF] Executed ViewResult - view Index executed in 3.8447ms.
+2025-03-02 18:36:24.994 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 5.4375ms
+2025-03-02 18:36:24.997 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:24.998 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 15.2054ms
+2025-03-02 18:36:25.027 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:36:25.029 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:36:25.032 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 2.6962ms
+2025-03-02 18:36:25.034 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.0620ms
+2025-03-02 18:36:25.433 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37
+2025-03-02 18:36:25.437 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:25.438 [INF] Route matched with {action = "Update", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(ChargeModule.Models.AdminConfig) on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:25.442 [INF] Конфигурация обновлена: скорость = 10, попыток = 5
+2025-03-02 18:36:25.443 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 18:36:25.445 [INF] Executed action ChargeModule.Controllers.AdminController.Update (WebApplication7) in 2.9312ms
+2025-03-02 18:36:25.446 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:36:25.448 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37 - 302 0 - 14.2135ms
+2025-03-02 18:36:25.452 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:36:25.456 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:25.457 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:25.461 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:36:25.462 [INF] Executed ViewResult - view Index executed in 1.6038ms.
+2025-03-02 18:36:25.464 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 3.5132ms
+2025-03-02 18:36:25.467 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:25.471 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 18.9081ms
+2025-03-02 18:36:25.500 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:36:25.503 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:36:25.508 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 4.9998ms
+2025-03-02 18:36:25.509 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.8393ms
+2025-03-02 18:36:27.353 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:36:27.356 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:27.357 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:27.362 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:36:27.364 [INF] Executed ViewResult - view Index executed in 1.727ms.
+2025-03-02 18:36:27.365 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 3.3397ms
+2025-03-02 18:36:27.368 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:27.370 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 16.9697ms
+2025-03-02 18:36:27.404 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:36:27.407 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:36:27.412 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 5.2113ms
+2025-03-02 18:36:27.413 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.9326ms
+2025-03-02 18:36:28.809 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:36:28.814 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 4.3046ms
+2025-03-02 18:36:30.174 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:36:30.176 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 1.9550ms
+2025-03-02 18:36:36.658 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:36:36.661 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:36.663 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:36.666 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:36:36.668 [INF] Executed ViewResult - view Index executed in 1.6972ms.
+2025-03-02 18:36:36.669 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 3.3306ms
+2025-03-02 18:36:36.671 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:36.673 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 15.1290ms
+2025-03-02 18:36:36.724 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:36:36.724 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:36:36.730 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 6.0378ms
+2025-03-02 18:36:36.735 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.7431ms
+2025-03-02 18:36:51.015 [INF] Инициируем регистрацию транспортного средства №1
+2025-03-02 18:36:51.298 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-02 18:36:51.394 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:36:51.425 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:36:52.767 [INF] Received HTTP response headers after 1335.6263ms - 200
+2025-03-02 18:36:52.772 [INF] End processing HTTP request after 1456.3195ms - 200
+2025-03-02 18:36:52.778 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-02 18:36:52.983 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_1","VehicleId":"charging_1","ServiceSpots":{"parking_1":"parking_1_charging_1","parking_2":"parking_2_charging_1"}}
+2025-03-02 18:36:52.986 [INF] Транспортное средство charging_1 зарегистрировано. Гараж: garrage_charging_1. ServiceSpots: {"parking_1":"parking_1_charging_1","parking_2":"parking_2_charging_1"}
+2025-03-02 18:36:52.988 [INF] Инициируем регистрацию транспортного средства №2
+2025-03-02 18:36:52.989 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-02 18:36:52.990 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:36:52.992 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:36:53.128 [INF] Received HTTP response headers after 134.6061ms - 200
+2025-03-02 18:36:53.131 [INF] End processing HTTP request after 141.3174ms - 200
+2025-03-02 18:36:53.135 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-02 18:36:53.136 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_2","VehicleId":"charging_2","ServiceSpots":{"parking_1":"parking_1_charging_2","parking_2":"parking_2_charging_2"}}
+2025-03-02 18:36:53.138 [INF] Транспортное средство charging_2 зарегистрировано. Гараж: garrage_charging_2. ServiceSpots: {"parking_1":"parking_1_charging_2","parking_2":"parking_2_charging_2"}
+2025-03-02 18:36:53.139 [INF] Инициируем регистрацию транспортного средства №3
+2025-03-02 18:36:53.141 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-02 18:36:53.142 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:36:53.143 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:36:53.279 [INF] Received HTTP response headers after 133.284ms - 200
+2025-03-02 18:36:53.283 [INF] End processing HTTP request after 140.9358ms - 200
+2025-03-02 18:36:53.287 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-02 18:36:53.291 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_3","VehicleId":"charging_3","ServiceSpots":{"parking_1":"parking_1_charging_3","parking_2":"parking_2_charging_3"}}
+2025-03-02 18:36:53.296 [INF] Транспортное средство charging_3 зарегистрировано. Гараж: garrage_charging_3. ServiceSpots: {"parking_1":"parking_1_charging_3","parking_2":"parking_2_charging_3"}
+2025-03-02 18:36:53.775 [INF] User profile is available. Using 'C:\Users\Юля\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-02 18:36:54.141 [INF] Now listening on: https://localhost:7163
+2025-03-02 18:36:54.145 [INF] Now listening on: http://localhost:5117
+2025-03-02 18:36:54.149 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-02 18:36:54.153 [INF] Hosting environment: Development
+2025-03-02 18:36:54.157 [INF] Content root path: C:\Users\Юля\Documents\GitHub\charge\WebApplication7\
+2025-03-02 18:36:54.886 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - -
+2025-03-02 18:36:55.239 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - - - 200 - text/html;charset=utf-8 365.9533ms
+2025-03-02 18:36:55.289 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:36:55.302 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 13.0590ms
+2025-03-02 18:36:55.359 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - -
+2025-03-02 18:36:55.506 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 147.3516ms
+2025-03-02 18:36:55.593 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - -
+2025-03-02 18:36:56.143 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 550.0215ms
+2025-03-02 18:36:59.739 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:36:59.789 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:59.815 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:36:59.837 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:36:59.920 [INF] Executed ViewResult - view Index executed in 85.3535ms.
+2025-03-02 18:36:59.922 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 103.6784ms
+2025-03-02 18:36:59.923 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:36:59.931 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 192.4706ms
+2025-03-02 18:36:59.966 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:36:59.968 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:36:59.982 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 14.7134ms
+2025-03-02 18:37:00.005 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.3623ms
+2025-03-02 18:37:45.247 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 38
+2025-03-02 18:37:45.259 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:37:45.283 [INF] Route matched with {action = "Update", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(ChargeModule.Models.AdminConfig) on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:37:45.335 [INF] Конфигурация обновлена: скорость = 20, попыток = 10
+2025-03-02 18:37:45.369 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 18:37:45.371 [INF] Executed action ChargeModule.Controllers.AdminController.Update (WebApplication7) in 85.738ms
+2025-03-02 18:37:45.372 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:37:45.373 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 38 - 302 0 - 125.9404ms
+2025-03-02 18:37:45.377 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:37:45.380 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:37:45.381 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:37:45.382 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:37:45.389 [INF] Executed ViewResult - view Index executed in 6.865ms.
+2025-03-02 18:37:45.391 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 8.7226ms
+2025-03-02 18:37:45.393 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:37:45.399 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 22.0466ms
+2025-03-02 18:37:45.440 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:37:45.441 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:37:45.446 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 4.5196ms
+2025-03-02 18:37:45.464 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.1389ms
+2025-03-02 18:38:30.696 [INF] Request starting HTTP/2 POST https://localhost:7163/Charge/request application/json 27
+2025-03-02 18:38:30.697 [INF] Executing endpoint 'ChargeModule.Controllers.ChargeController.RequestCharging (WebApplication7)'
+2025-03-02 18:38:30.714 [INF] Route matched with {action = "RequestCharging", controller = "Charge"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RequestCharging(ChargeModule.Models.ChargingRequest) on controller ChargeModule.Controllers.ChargeController (WebApplication7).
+2025-03-02 18:38:30.731 [INF] Обработка запроса зарядки для самолёта с парковкой parking_1
+2025-03-02 18:38:30.732 [INF] Транспортное средство charging_3 назначено для самолёта с парковкой parking_1
+2025-03-02 18:38:30.733 [INF] Запрашиваем маршрут от garrage_charging_3 до parking_1_charging_3 для транспортного средства charging
+2025-03-02 18:38:30.748 [INF] Отправляем запрос маршрута: {"from":"garrage_charging_3","to":"parking_1_charging_3","type":"charging"}
+2025-03-02 18:38:30.750 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/route"
+2025-03-02 18:38:30.750 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/route"
+2025-03-02 18:38:31.576 [INF] Received HTTP response headers after 825.2673ms - 200
+2025-03-02 18:38:31.578 [INF] End processing HTTP request after 828.4466ms - 200
+2025-03-02 18:38:31.579 [INF] Получен ответ на запрос маршрута, статус: "OK"
+2025-03-02 18:38:31.584 [INF] Полученный маршрут от garrage_charging_3 до parking_1_charging_3: garrage_charging_3 -> garrage -> garrage_to_parking_1 -> parking_1_charging_3
+2025-03-02 18:38:31.585 [INF] Полученный маршрут от garrage_charging_3 до parking_1_charging_3: garrage_charging_3 -> garrage -> garrage_to_parking_1 -> parking_1_charging_3
+2025-03-02 18:38:31.592 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_3","vehicleType":"charging","from":"garrage_charging_3","to":"garrage"}
+2025-03-02 18:38:31.593 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:38:31.595 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:38:31.715 [INF] Received HTTP response headers after 118.7899ms - 200
+2025-03-02 18:38:31.717 [INF] End processing HTTP request after 123.8972ms - 200
+2025-03-02 18:38:31.720 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-02 18:38:31.740 [INF] Ответ на перемещение: {"Distance":10}
+2025-03-02 18:38:31.743 [INF] Запрос перемещения от garrage_charging_3 до garrage разрешен. Расстояние: 10
+2025-03-02 18:38:31.745 [INF] Ожидание 0.5 секунд для прохождения сегмента.
+2025-03-02 18:38:32.254 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_3","vehicleType":"charging","nodeId":"garrage"}
+2025-03-02 18:38:32.256 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:38:32.258 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:38:32.386 [INF] Received HTTP response headers after 126.3253ms - 200
+2025-03-02 18:38:32.387 [INF] End processing HTTP request after 131.2746ms - 200
+2025-03-02 18:38:32.388 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-02 18:38:32.390 [INF] Уведомление о прибытии для транспортного средства charging_3 получено успешно.
+2025-03-02 18:38:32.391 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_3","vehicleType":"charging","from":"garrage","to":"garrage_to_parking_1"}
+2025-03-02 18:38:32.394 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:38:32.396 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:38:32.550 [INF] Received HTTP response headers after 152.8485ms - 200
+2025-03-02 18:38:32.552 [INF] End processing HTTP request after 158.304ms - 200
+2025-03-02 18:38:32.553 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-02 18:38:32.555 [INF] Ответ на перемещение: {"Distance":100}
+2025-03-02 18:38:32.556 [INF] Запрос перемещения от garrage до garrage_to_parking_1 разрешен. Расстояние: 100
+2025-03-02 18:38:32.557 [INF] Ожидание 5 секунд для прохождения сегмента.
+2025-03-02 18:38:37.566 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_3","vehicleType":"charging","nodeId":"garrage_to_parking_1"}
+2025-03-02 18:38:37.568 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:38:37.570 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:38:37.721 [INF] Received HTTP response headers after 148.2223ms - 200
+2025-03-02 18:38:37.723 [INF] End processing HTTP request after 154.2256ms - 200
+2025-03-02 18:38:37.724 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-02 18:38:37.726 [INF] Уведомление о прибытии для транспортного средства charging_3 получено успешно.
+2025-03-02 18:38:37.741 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_3","vehicleType":"charging","from":"garrage_to_parking_1","to":"parking_1_charging_3"}
+2025-03-02 18:38:37.743 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:38:37.744 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:38:38.247 [INF] Received HTTP response headers after 501.3593ms - 200
+2025-03-02 18:38:38.248 [INF] End processing HTTP request after 505.2283ms - 200
+2025-03-02 18:38:38.250 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-02 18:38:38.251 [INF] Ответ на перемещение: {"Distance":100}
+2025-03-02 18:38:38.253 [INF] Запрос перемещения от garrage_to_parking_1 до parking_1_charging_3 разрешен. Расстояние: 100
+2025-03-02 18:38:38.254 [INF] Ожидание 5 секунд для прохождения сегмента.
+2025-03-02 18:38:39.202 [INF] Request starting HTTP/2 POST https://localhost:7163/Charge/request application/json 27
+2025-03-02 18:38:39.204 [INF] Executing endpoint 'ChargeModule.Controllers.ChargeController.RequestCharging (WebApplication7)'
+2025-03-02 18:38:39.207 [INF] Route matched with {action = "RequestCharging", controller = "Charge"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RequestCharging(ChargeModule.Models.ChargingRequest) on controller ChargeModule.Controllers.ChargeController (WebApplication7).
+2025-03-02 18:38:39.217 [INF] Обработка запроса зарядки для самолёта с парковкой parking_2
+2025-03-02 18:38:39.217 [INF] Транспортное средство charging_2 назначено для самолёта с парковкой parking_2
+2025-03-02 18:38:39.219 [INF] Запрашиваем маршрут от garrage_charging_2 до parking_2_charging_2 для транспортного средства charging
+2025-03-02 18:38:39.226 [INF] Отправляем запрос маршрута: {"from":"garrage_charging_2","to":"parking_2_charging_2","type":"charging"}
+2025-03-02 18:38:39.228 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/route"
+2025-03-02 18:38:39.232 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/route"
+2025-03-02 18:38:39.382 [INF] Received HTTP response headers after 148.685ms - 200
+2025-03-02 18:38:39.383 [INF] End processing HTTP request after 155.696ms - 200
+2025-03-02 18:38:39.385 [INF] Получен ответ на запрос маршрута, статус: "OK"
+2025-03-02 18:38:39.386 [INF] Полученный маршрут от garrage_charging_2 до parking_2_charging_2: garrage_charging_2 -> garrage -> garrage_to_parking_2 -> parking_2_charging_2
+2025-03-02 18:38:39.390 [INF] Полученный маршрут от garrage_charging_2 до parking_2_charging_2: garrage_charging_2 -> garrage -> garrage_to_parking_2 -> parking_2_charging_2
+2025-03-02 18:38:39.394 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_2","vehicleType":"charging","from":"garrage_charging_2","to":"garrage"}
+2025-03-02 18:38:39.395 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:38:39.397 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:38:39.516 [INF] Received HTTP response headers after 117.682ms - 200
+2025-03-02 18:38:39.517 [INF] End processing HTTP request after 121.7323ms - 200
+2025-03-02 18:38:39.519 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-02 18:38:39.521 [INF] Ответ на перемещение: {"Distance":10}
+2025-03-02 18:38:39.524 [INF] Запрос перемещения от garrage_charging_2 до garrage разрешен. Расстояние: 10
+2025-03-02 18:38:39.526 [INF] Ожидание 0.5 секунд для прохождения сегмента.
+2025-03-02 18:38:40.039 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_2","vehicleType":"charging","nodeId":"garrage"}
+2025-03-02 18:38:40.040 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:38:40.042 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:38:40.182 [INF] Received HTTP response headers after 137.3764ms - 200
+2025-03-02 18:38:40.183 [INF] End processing HTTP request after 142.6533ms - 200
+2025-03-02 18:38:40.185 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-02 18:38:40.186 [INF] Уведомление о прибытии для транспортного средства charging_2 получено успешно.
+2025-03-02 18:38:40.189 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_2","vehicleType":"charging","from":"garrage","to":"garrage_to_parking_2"}
+2025-03-02 18:38:40.192 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:38:40.193 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:38:41.064 [INF] Received HTTP response headers after 867.0971ms - 200
+2025-03-02 18:38:41.066 [INF] End processing HTTP request after 873.7926ms - 200
+2025-03-02 18:38:41.067 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-02 18:38:41.069 [INF] Ответ на перемещение: {"Distance":100}
+2025-03-02 18:38:41.071 [INF] Запрос перемещения от garrage до garrage_to_parking_2 разрешен. Расстояние: 100
+2025-03-02 18:38:41.073 [INF] Ожидание 5 секунд для прохождения сегмента.
+2025-03-02 18:38:43.259 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_3","vehicleType":"charging","nodeId":"parking_1_charging_3"}
+2025-03-02 18:38:43.261 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:38:43.263 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:38:43.391 [INF] Received HTTP response headers after 126.7421ms - 200
+2025-03-02 18:38:43.392 [INF] End processing HTTP request after 131.0368ms - 200
+2025-03-02 18:38:43.394 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-02 18:38:43.396 [INF] Уведомление о прибытии для транспортного средства charging_3 получено успешно.
+2025-03-02 18:38:43.397 [INF] Транспортное средство charging_3 начало зарядку на парковке parking_1_charging_3
+2025-03-02 18:38:43.409 [INF] Executing OkObjectResult, writing value of type 'ChargeModule.Models.ChargingResponse'.
+2025-03-02 18:38:43.416 [INF] Executed action ChargeModule.Controllers.ChargeController.RequestCharging (WebApplication7) in 12700.0856ms
+2025-03-02 18:38:43.421 [INF] Executed endpoint 'ChargeModule.Controllers.ChargeController.RequestCharging (WebApplication7)'
+2025-03-02 18:38:43.424 [INF] Request finished HTTP/2 POST https://localhost:7163/Charge/request application/json 27 - 200 - application/json;+charset=utf-8 12728.8524ms
+2025-03-02 18:38:46.086 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_2","vehicleType":"charging","nodeId":"garrage_to_parking_2"}
+2025-03-02 18:38:46.088 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:38:46.089 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:38:46.210 [INF] Received HTTP response headers after 119.7475ms - 200
+2025-03-02 18:38:46.212 [INF] End processing HTTP request after 123.8022ms - 200
+2025-03-02 18:38:46.214 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-02 18:38:46.217 [INF] Уведомление о прибытии для транспортного средства charging_2 получено успешно.
+2025-03-02 18:38:46.219 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_2","vehicleType":"charging","from":"garrage_to_parking_2","to":"parking_2_charging_2"}
+2025-03-02 18:38:46.222 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:38:46.223 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:38:46.384 [INF] Received HTTP response headers after 159.3591ms - 200
+2025-03-02 18:38:46.385 [INF] End processing HTTP request after 163.5926ms - 200
+2025-03-02 18:38:46.386 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-02 18:38:46.387 [INF] Ответ на перемещение: {"Distance":100}
+2025-03-02 18:38:46.388 [INF] Запрос перемещения от garrage_to_parking_2 до parking_2_charging_2 разрешен. Расстояние: 100
+2025-03-02 18:38:46.390 [INF] Ожидание 5 секунд для прохождения сегмента.
+2025-03-02 18:38:51.405 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_2","vehicleType":"charging","nodeId":"parking_2_charging_2"}
+2025-03-02 18:38:51.406 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:38:51.407 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:38:52.271 [INF] Received HTTP response headers after 862.9723ms - 200
+2025-03-02 18:38:52.273 [INF] End processing HTTP request after 866.2745ms - 200
+2025-03-02 18:38:52.273 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-02 18:38:52.274 [INF] Уведомление о прибытии для транспортного средства charging_2 получено успешно.
+2025-03-02 18:38:52.274 [INF] Транспортное средство charging_2 начало зарядку на парковке parking_2_charging_2
+2025-03-02 18:38:52.276 [INF] Executing OkObjectResult, writing value of type 'ChargeModule.Models.ChargingResponse'.
+2025-03-02 18:38:52.278 [INF] Executed action ChargeModule.Controllers.ChargeController.RequestCharging (WebApplication7) in 13061.3843ms
+2025-03-02 18:38:52.280 [INF] Executed endpoint 'ChargeModule.Controllers.ChargeController.RequestCharging (WebApplication7)'
+2025-03-02 18:38:52.284 [INF] Request finished HTTP/2 POST https://localhost:7163/Charge/request application/json 27 - 200 - application/json;+charset=utf-8 13081.4927ms
+2025-03-02 18:39:00.656 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 38
+2025-03-02 18:39:00.664 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:39:00.666 [INF] Route matched with {action = "Update", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(ChargeModule.Models.AdminConfig) on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:39:00.690 [INF] Конфигурация обновлена: скорость = 20, попыток = 10
+2025-03-02 18:39:00.691 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 18:39:00.697 [INF] Executed action ChargeModule.Controllers.AdminController.Update (WebApplication7) in 8.0079ms
+2025-03-02 18:39:00.699 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:39:00.702 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 38 - 302 0 - 46.1385ms
+2025-03-02 18:39:00.708 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:39:00.711 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:39:00.715 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:39:00.720 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:39:00.729 [INF] Executed ViewResult - view Index executed in 9.7487ms.
+2025-03-02 18:39:00.730 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 11.4172ms
+2025-03-02 18:39:00.733 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:39:00.735 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 26.7273ms
+2025-03-02 18:39:00.779 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:39:00.783 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:39:00.810 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 26.9056ms
+2025-03-02 18:39:00.830 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.1174ms
+2025-03-02 18:39:45.386 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 38
+2025-03-02 18:39:45.396 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:39:45.398 [INF] Route matched with {action = "Update", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(ChargeModule.Models.AdminConfig) on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:39:45.403 [INF] Конфигурация обновлена: скорость = 10, попыток = 10
+2025-03-02 18:39:45.407 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 18:39:45.408 [INF] Executed action ChargeModule.Controllers.AdminController.Update (WebApplication7) in 5.8109ms
+2025-03-02 18:39:45.411 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:39:45.413 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 38 - 302 0 - 26.4877ms
+2025-03-02 18:39:45.418 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:39:45.421 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:39:45.427 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:39:45.432 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:39:45.434 [INF] Executed ViewResult - view Index executed in 2.8701ms.
+2025-03-02 18:39:45.444 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 12.8914ms
+2025-03-02 18:39:45.455 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:39:45.458 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 40.3740ms
+2025-03-02 18:39:45.510 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:39:45.537 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:39:45.549 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 12.3128ms
+2025-03-02 18:39:45.561 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 52.2946ms
+2025-03-02 18:40:10.987 [INF] Request starting HTTP/2 POST https://localhost:7163/Charge/complete application/json 27
+2025-03-02 18:40:10.995 [INF] Executing endpoint 'ChargeModule.Controllers.ChargeController.CompleteCharging (WebApplication7)'
+2025-03-02 18:40:11.002 [INF] Route matched with {action = "CompleteCharging", controller = "Charge"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompleteCharging(ChargeModule.Models.ChargingCompletionRequest) on controller ChargeModule.Controllers.ChargeController (WebApplication7).
+2025-03-02 18:40:11.013 [INF] Обработка завершения зарядки для самолёта с парковкой parking_2
+2025-03-02 18:40:11.014 [INF] Запрашиваем маршрут от parking_2_charging_2 до garrage_charging_2 для транспортного средства charging_2
+2025-03-02 18:40:11.017 [INF] Отправляем запрос маршрута: {"from":"parking_2_charging_2","to":"garrage_charging_2","type":"charging"}
+2025-03-02 18:40:11.019 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/route"
+2025-03-02 18:40:11.022 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/route"
+2025-03-02 18:40:11.416 [INF] Received HTTP response headers after 390.9592ms - 200
+2025-03-02 18:40:11.417 [INF] End processing HTTP request after 398.4299ms - 200
+2025-03-02 18:40:11.419 [INF] Получен ответ на запрос маршрута, статус: "OK"
+2025-03-02 18:40:11.421 [INF] Полученный маршрут от parking_2_charging_2 до garrage_charging_2: parking_2_charging_2 -> garrage_from_parking_2 -> garrage -> garrage_charging_2
+2025-03-02 18:40:11.423 [INF] Полученный маршрут от parking_2_charging_2 до garrage_charging_2: parking_2_charging_2 -> garrage_from_parking_2 -> garrage -> garrage_charging_2
+2025-03-02 18:40:11.426 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_2","vehicleType":"charging","from":"parking_2_charging_2","to":"garrage_from_parking_2"}
+2025-03-02 18:40:11.430 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:40:11.431 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:40:11.551 [INF] Received HTTP response headers after 116.2646ms - 200
+2025-03-02 18:40:11.553 [INF] End processing HTTP request after 123.3853ms - 200
+2025-03-02 18:40:11.555 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-02 18:40:11.558 [INF] Ответ на перемещение: {"Distance":100}
+2025-03-02 18:40:11.560 [INF] Запрос перемещения от parking_2_charging_2 до garrage_from_parking_2 разрешен. Расстояние: 100
+2025-03-02 18:40:11.562 [INF] Ожидание 10 секунд для прохождения сегмента.
+2025-03-02 18:40:20.112 [INF] Request starting HTTP/2 POST https://localhost:7163/Charge/complete application/json 27
+2025-03-02 18:40:20.113 [INF] Executing endpoint 'ChargeModule.Controllers.ChargeController.CompleteCharging (WebApplication7)'
+2025-03-02 18:40:20.116 [INF] Route matched with {action = "CompleteCharging", controller = "Charge"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompleteCharging(ChargeModule.Models.ChargingCompletionRequest) on controller ChargeModule.Controllers.ChargeController (WebApplication7).
+2025-03-02 18:40:20.124 [INF] Обработка завершения зарядки для самолёта с парковкой parking_2
+2025-03-02 18:40:20.126 [ERR] Нет зарегистрированной машины для завершения зарядки на парковке parking_2
+2025-03-02 18:40:20.345 [ERR] Error completing charging
+System.Exception: Нет транспортного средства, обслуживающего данный запрос
+   at ChargeModule.Services.ChargeService.ProcessChargingCompletionAsync(ChargingCompletionRequest request) in C:\Users\Юля\Documents\GitHub\charge\WebApplication7\Services\ChargeService.cs:line 131
+   at ChargeModule.Controllers.ChargeController.CompleteCharging(ChargingCompletionRequest request) in C:\Users\Юля\Documents\GitHub\charge\WebApplication7\Controllers\ChargeController.cs:line 55
+2025-03-02 18:40:20.445 [INF] Executing ObjectResult, writing value of type 'ChargeModule.Models.ChargingErrorResponse'.
+2025-03-02 18:40:20.447 [INF] Executed action ChargeModule.Controllers.ChargeController.CompleteCharging (WebApplication7) in 323.5286ms
+2025-03-02 18:40:20.449 [INF] Executed endpoint 'ChargeModule.Controllers.ChargeController.CompleteCharging (WebApplication7)'
+2025-03-02 18:40:20.452 [INF] Request finished HTTP/2 POST https://localhost:7163/Charge/complete application/json 27 - 500 - application/json;+charset=utf-8 339.6013ms
+2025-03-02 18:40:21.589 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_2","vehicleType":"charging","nodeId":"garrage_from_parking_2"}
+2025-03-02 18:40:21.592 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:40:21.593 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:40:22.153 [INF] Received HTTP response headers after 557.5557ms - 200
+2025-03-02 18:40:22.156 [INF] End processing HTTP request after 563.9235ms - 200
+2025-03-02 18:40:22.158 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-02 18:40:22.160 [INF] Уведомление о прибытии для транспортного средства charging_2 получено успешно.
+2025-03-02 18:40:22.161 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_2","vehicleType":"charging","from":"garrage_from_parking_2","to":"garrage"}
+2025-03-02 18:40:22.164 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:40:22.169 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:40:22.313 [INF] Received HTTP response headers after 141.9272ms - 200
+2025-03-02 18:40:22.315 [INF] End processing HTTP request after 150.6095ms - 200
+2025-03-02 18:40:22.317 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-02 18:40:22.319 [INF] Ответ на перемещение: {"Distance":100}
+2025-03-02 18:40:22.320 [INF] Запрос перемещения от garrage_from_parking_2 до garrage разрешен. Расстояние: 100
+2025-03-02 18:40:22.322 [INF] Ожидание 10 секунд для прохождения сегмента.
+2025-03-02 18:40:32.336 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_2","vehicleType":"charging","nodeId":"garrage"}
+2025-03-02 18:40:32.342 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:40:32.343 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:40:32.802 [INF] Received HTTP response headers after 456.3968ms - 200
+2025-03-02 18:40:32.804 [INF] End processing HTTP request after 462.3341ms - 200
+2025-03-02 18:40:32.806 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-02 18:40:32.809 [INF] Уведомление о прибытии для транспортного средства charging_2 получено успешно.
+2025-03-02 18:40:32.811 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_2","vehicleType":"charging","from":"garrage","to":"garrage_charging_2"}
+2025-03-02 18:40:32.813 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:40:32.818 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:40:32.934 [INF] Received HTTP response headers after 114.8566ms - 200
+2025-03-02 18:40:32.935 [INF] End processing HTTP request after 122.4405ms - 200
+2025-03-02 18:40:32.938 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-02 18:40:32.939 [INF] Ответ на перемещение: {"Distance":10}
+2025-03-02 18:40:32.941 [INF] Запрос перемещения от garrage до garrage_charging_2 разрешен. Расстояние: 10
+2025-03-02 18:40:32.943 [INF] Ожидание 1 секунд для прохождения сегмента.
+2025-03-02 18:40:33.955 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_2","vehicleType":"charging","nodeId":"garrage_charging_2"}
+2025-03-02 18:40:33.957 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:40:33.959 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:40:34.082 [INF] Received HTTP response headers after 121.9739ms - 200
+2025-03-02 18:40:34.084 [INF] End processing HTTP request after 126.9574ms - 200
+2025-03-02 18:40:34.086 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-02 18:40:34.090 [INF] Уведомление о прибытии для транспортного средства charging_2 получено успешно.
+2025-03-02 18:40:34.092 [INF] Транспортное средство charging_2 теперь свободно в гараже.
+2025-03-02 18:40:34.103 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-03-02 18:40:34.105 [INF] Executed action ChargeModule.Controllers.ChargeController.CompleteCharging (WebApplication7) in 23098.061ms
+2025-03-02 18:40:34.107 [INF] Executed endpoint 'ChargeModule.Controllers.ChargeController.CompleteCharging (WebApplication7)'
+2025-03-02 18:40:34.111 [INF] Request finished HTTP/2 POST https://localhost:7163/Charge/complete application/json 27 - 204 - - 23124.1687ms
+2025-03-02 18:40:41.555 [INF] Request starting HTTP/2 POST https://localhost:7163/Charge/complete application/json 27
+2025-03-02 18:40:41.560 [INF] Executing endpoint 'ChargeModule.Controllers.ChargeController.CompleteCharging (WebApplication7)'
+2025-03-02 18:40:41.562 [INF] Route matched with {action = "CompleteCharging", controller = "Charge"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompleteCharging(ChargeModule.Models.ChargingCompletionRequest) on controller ChargeModule.Controllers.ChargeController (WebApplication7).
+2025-03-02 18:40:41.573 [INF] Обработка завершения зарядки для самолёта с парковкой parking_1
+2025-03-02 18:40:41.574 [INF] Запрашиваем маршрут от parking_1_charging_3 до garrage_charging_3 для транспортного средства charging_3
+2025-03-02 18:40:41.578 [INF] Отправляем запрос маршрута: {"from":"parking_1_charging_3","to":"garrage_charging_3","type":"charging"}
+2025-03-02 18:40:41.579 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/route"
+2025-03-02 18:40:41.582 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/route"
+2025-03-02 18:40:42.409 [INF] Received HTTP response headers after 821.9658ms - 200
+2025-03-02 18:40:42.410 [INF] End processing HTTP request after 831.5844ms - 200
+2025-03-02 18:40:42.413 [INF] Получен ответ на запрос маршрута, статус: "OK"
+2025-03-02 18:40:42.414 [INF] Полученный маршрут от parking_1_charging_3 до garrage_charging_3: parking_1_charging_3 -> garrage_from_parking_1 -> garrage -> garrage_charging_3
+2025-03-02 18:40:42.416 [INF] Полученный маршрут от parking_1_charging_3 до garrage_charging_3: parking_1_charging_3 -> garrage_from_parking_1 -> garrage -> garrage_charging_3
+2025-03-02 18:40:42.421 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_3","vehicleType":"charging","from":"parking_1_charging_3","to":"garrage_from_parking_1"}
+2025-03-02 18:40:42.423 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:40:42.424 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:40:42.540 [INF] Received HTTP response headers after 114.2911ms - 200
+2025-03-02 18:40:42.542 [INF] End processing HTTP request after 119.0957ms - 200
+2025-03-02 18:40:42.544 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-02 18:40:42.545 [INF] Ответ на перемещение: {"Distance":100}
+2025-03-02 18:40:42.547 [INF] Запрос перемещения от parking_1_charging_3 до garrage_from_parking_1 разрешен. Расстояние: 100
+2025-03-02 18:40:42.549 [INF] Ожидание 10 секунд для прохождения сегмента.
+2025-03-02 18:40:52.572 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_3","vehicleType":"charging","nodeId":"garrage_from_parking_1"}
+2025-03-02 18:40:52.581 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:40:52.583 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:40:52.709 [INF] Received HTTP response headers after 124.301ms - 200
+2025-03-02 18:40:52.710 [INF] End processing HTTP request after 128.6691ms - 200
+2025-03-02 18:40:52.712 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-02 18:40:52.713 [INF] Уведомление о прибытии для транспортного средства charging_3 получено успешно.
+2025-03-02 18:40:52.715 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_3","vehicleType":"charging","from":"garrage_from_parking_1","to":"garrage"}
+2025-03-02 18:40:52.718 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:40:52.720 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:40:52.875 [INF] Received HTTP response headers after 153.811ms - 200
+2025-03-02 18:40:52.876 [INF] End processing HTTP request after 158.7639ms - 200
+2025-03-02 18:40:52.878 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-02 18:40:52.879 [INF] Ответ на перемещение: {"Distance":100}
+2025-03-02 18:40:52.881 [INF] Запрос перемещения от garrage_from_parking_1 до garrage разрешен. Расстояние: 100
+2025-03-02 18:40:52.882 [INF] Ожидание 10 секунд для прохождения сегмента.
+2025-03-02 18:41:02.893 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_3","vehicleType":"charging","nodeId":"garrage"}
+2025-03-02 18:41:02.895 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:41:02.896 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:41:03.044 [INF] Received HTTP response headers after 147.3342ms - 200
+2025-03-02 18:41:03.045 [INF] End processing HTTP request after 150.4391ms - 200
+2025-03-02 18:41:03.046 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-02 18:41:03.047 [INF] Уведомление о прибытии для транспортного средства charging_3 получено успешно.
+2025-03-02 18:41:03.048 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_3","vehicleType":"charging","from":"garrage","to":"garrage_charging_3"}
+2025-03-02 18:41:03.048 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:41:03.050 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:41:03.169 [INF] Received HTTP response headers after 117.6117ms - 200
+2025-03-02 18:41:03.170 [INF] End processing HTTP request after 121.5758ms - 200
+2025-03-02 18:41:03.171 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-02 18:41:03.172 [INF] Ответ на перемещение: {"Distance":10}
+2025-03-02 18:41:03.174 [INF] Запрос перемещения от garrage до garrage_charging_3 разрешен. Расстояние: 10
+2025-03-02 18:41:03.175 [INF] Ожидание 1 секунд для прохождения сегмента.
+2025-03-02 18:41:04.189 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_3","vehicleType":"charging","nodeId":"garrage_charging_3"}
+2025-03-02 18:41:04.192 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:41:04.193 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:41:04.314 [INF] Received HTTP response headers after 117.9776ms - 200
+2025-03-02 18:41:04.315 [INF] End processing HTTP request after 123.0286ms - 200
+2025-03-02 18:41:04.317 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-02 18:41:04.318 [INF] Уведомление о прибытии для транспортного средства charging_3 получено успешно.
+2025-03-02 18:41:04.319 [INF] Транспортное средство charging_3 теперь свободно в гараже.
+2025-03-02 18:41:04.321 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-03-02 18:41:04.323 [INF] Executed action ChargeModule.Controllers.ChargeController.CompleteCharging (WebApplication7) in 22749.814ms
+2025-03-02 18:41:04.324 [INF] Executed endpoint 'ChargeModule.Controllers.ChargeController.CompleteCharging (WebApplication7)'
+2025-03-02 18:41:04.330 [INF] Request finished HTTP/2 POST https://localhost:7163/Charge/complete application/json 27 - 204 - - 22774.1896ms
+2025-03-02 18:41:07.767 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 38
+2025-03-02 18:41:07.784 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:41:07.785 [INF] Route matched with {action = "Update", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(ChargeModule.Models.AdminConfig) on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:41:07.797 [INF] Конфигурация обновлена: скорость = 10, попыток = 10
+2025-03-02 18:41:07.800 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 18:41:07.802 [INF] Executed action ChargeModule.Controllers.AdminController.Update (WebApplication7) in 5.0316ms
+2025-03-02 18:41:07.803 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:41:07.805 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 38 - 302 0 - 38.0464ms
+2025-03-02 18:41:07.810 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:41:07.813 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:41:07.815 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:41:07.818 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:41:07.820 [INF] Executed ViewResult - view Index executed in 1.8405ms.
+2025-03-02 18:41:07.821 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 3.4705ms
+2025-03-02 18:41:07.824 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:41:07.830 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 19.3703ms
+2025-03-02 18:41:07.887 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:41:07.913 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:41:07.926 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 13.6566ms
+2025-03-02 18:41:07.929 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.7857ms
+2025-03-02 18:50:00.182 [INF] Инициируем регистрацию транспортного средства №1
+2025-03-02 18:50:00.351 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-02 18:50:00.408 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:50:00.423 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:50:54.483 [INF] Инициируем регистрацию транспортного средства №1
+2025-03-02 18:50:54.702 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-02 18:50:54.783 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:50:54.806 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:50:55.768 [INF] Received HTTP response headers after 949.1759ms - 200
+2025-03-02 18:50:55.777 [INF] End processing HTTP request after 1061.2038ms - 200
+2025-03-02 18:50:55.787 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-02 18:50:56.119 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_1","VehicleId":"charging_1","ServiceSpots":{"parking_1":"parking_1_charging_1","parking_2":"parking_2_charging_1"}}
+2025-03-02 18:50:56.121 [INF] Транспортное средство charging_1 зарегистрировано. Гараж: garrage_charging_1. ServiceSpots: {"parking_1":"parking_1_charging_1","parking_2":"parking_2_charging_1"}
+2025-03-02 18:50:56.123 [INF] Инициируем регистрацию транспортного средства №2
+2025-03-02 18:50:56.124 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-02 18:50:56.126 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:50:56.127 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:50:56.237 [INF] Received HTTP response headers after 107.4286ms - 200
+2025-03-02 18:50:56.239 [INF] End processing HTTP request after 113.4625ms - 200
+2025-03-02 18:50:56.240 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-02 18:50:56.242 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_2","VehicleId":"charging_2","ServiceSpots":{"parking_1":"parking_1_charging_2","parking_2":"parking_2_charging_2"}}
+2025-03-02 18:50:56.243 [INF] Транспортное средство charging_2 зарегистрировано. Гараж: garrage_charging_2. ServiceSpots: {"parking_1":"parking_1_charging_2","parking_2":"parking_2_charging_2"}
+2025-03-02 18:50:56.244 [INF] Инициируем регистрацию транспортного средства №3
+2025-03-02 18:50:56.244 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-02 18:50:56.245 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:50:56.246 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:50:56.351 [INF] Received HTTP response headers after 103.8975ms - 200
+2025-03-02 18:50:56.353 [INF] End processing HTTP request after 107.6354ms - 200
+2025-03-02 18:50:56.355 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-02 18:50:56.358 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_3","VehicleId":"charging_3","ServiceSpots":{"parking_1":"parking_1_charging_3","parking_2":"parking_2_charging_3"}}
+2025-03-02 18:50:56.361 [INF] Транспортное средство charging_3 зарегистрировано. Гараж: garrage_charging_3. ServiceSpots: {"parking_1":"parking_1_charging_3","parking_2":"parking_2_charging_3"}
+2025-03-02 18:50:56.802 [INF] User profile is available. Using 'C:\Users\Юля\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-02 18:50:57.184 [INF] Now listening on: https://localhost:7163
+2025-03-02 18:50:57.185 [INF] Now listening on: http://localhost:5117
+2025-03-02 18:50:57.186 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-02 18:50:57.187 [INF] Hosting environment: Development
+2025-03-02 18:50:57.188 [INF] Content root path: C:\Users\Юля\Documents\GitHub\charge\WebApplication7\
+2025-03-02 18:50:58.372 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - -
+2025-03-02 18:50:58.944 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - - - 200 - text/html;charset=utf-8 585.0731ms
+2025-03-02 18:50:59.094 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:50:59.121 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 26.2316ms
+2025-03-02 18:50:59.165 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - -
+2025-03-02 18:50:59.464 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 299.1403ms
+2025-03-02 18:50:59.614 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - -
+2025-03-02 18:51:00.106 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 491.5135ms
+2025-03-02 18:51:01.652 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:51:01.664 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 12.9789ms
+2025-03-02 18:51:19.419 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:51:19.512 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:51:19.557 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:51:19.616 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:51:19.819 [INF] Executed ViewResult - view Index executed in 202.4295ms.
+2025-03-02 18:51:19.888 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 319.7261ms
+2025-03-02 18:51:19.919 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:51:19.921 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:51:19.922 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:51:19.938 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 519.5691ms
+2025-03-02 18:51:19.950 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 27.6020ms
+2025-03-02 18:51:20.043 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 122.7378ms
+2025-03-02 18:51:35.755 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/registerVehicle application/x-www-form-urlencoded 13
+2025-03-02 18:51:35.767 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.RegisterVehicle (WebApplication7)'
+2025-03-02 18:51:35.800 [INF] Route matched with {action = "RegisterVehicle", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterVehicle(System.String) on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:51:35.846 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-02 18:51:35.847 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:51:35.848 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:51:35.966 [INF] Received HTTP response headers after 116.4503ms - 200
+2025-03-02 18:51:35.968 [INF] End processing HTTP request after 120.8192ms - 200
+2025-03-02 18:51:35.970 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-02 18:51:35.972 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_4","VehicleId":"charging_4","ServiceSpots":{"parking_2":"parking_2_charging_4","parking_1":"parking_1_charging_4"}}
+2025-03-02 18:51:35.975 [INF] Транспортное средство charging_4 зарегистрировано через админку.
+2025-03-02 18:51:35.977 [INF] Запрос на регистрацию транспортного средства типа charging успешно обработан.
+2025-03-02 18:51:36.019 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 18:51:36.023 [INF] Executed action ChargeModule.Controllers.AdminController.RegisterVehicle (WebApplication7) in 218.6324ms
+2025-03-02 18:51:36.027 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.RegisterVehicle (WebApplication7)'
+2025-03-02 18:51:36.032 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/registerVehicle application/x-www-form-urlencoded 13 - 302 0 - 276.4463ms
+2025-03-02 18:51:36.036 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:51:36.039 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:51:36.040 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:51:36.046 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:51:36.049 [INF] Executed ViewResult - view Index executed in 3.5145ms.
+2025-03-02 18:51:36.050 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 4.984ms
+2025-03-02 18:51:36.053 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:51:36.055 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 18.7900ms
+2025-03-02 18:51:36.096 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:51:36.099 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:51:36.107 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 7.7805ms
+2025-03-02 18:51:36.135 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.4228ms
+2025-03-02 18:52:00.397 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37
+2025-03-02 18:52:00.406 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:52:00.411 [INF] Route matched with {action = "Update", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(ChargeModule.Models.AdminConfig) on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:52:00.426 [INF] Конфигурация обновлена: скорость = 10, попыток = 5
+2025-03-02 18:52:00.429 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 18:52:00.430 [INF] Executed action ChargeModule.Controllers.AdminController.Update (WebApplication7) in 16.4933ms
+2025-03-02 18:52:00.435 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:52:00.437 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 37 - 302 0 - 40.1959ms
+2025-03-02 18:52:00.444 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:52:00.452 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:52:00.453 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:52:00.456 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:52:00.460 [INF] Executed ViewResult - view Index executed in 4.7303ms.
+2025-03-02 18:52:00.461 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 5.9382ms
+2025-03-02 18:52:00.463 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:52:00.465 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 21.2694ms
+2025-03-02 18:52:00.495 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:52:00.496 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:52:00.501 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 5.0006ms
+2025-03-02 18:52:00.502 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.6335ms
+2025-03-02 18:57:01.166 [INF] Инициируем регистрацию транспортного средства №1
+2025-03-02 18:57:01.578 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-02 18:57:01.669 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:57:01.728 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:57:02.898 [INF] Received HTTP response headers after 1127.0606ms - 200
+2025-03-02 18:57:02.906 [INF] End processing HTTP request after 1297.8898ms - 200
+2025-03-02 18:57:02.914 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-02 18:57:03.219 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_1","VehicleId":"charging_1","ServiceSpots":{"parking_1":"parking_1_charging_1","parking_2":"parking_2_charging_1"}}
+2025-03-02 18:57:03.221 [INF] Транспортное средство charging_1 зарегистрировано. Гараж: garrage_charging_1. ServiceSpots: {"parking_1":"parking_1_charging_1","parking_2":"parking_2_charging_1"}
+2025-03-02 18:57:03.223 [INF] Инициируем регистрацию транспортного средства №2
+2025-03-02 18:57:03.224 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-02 18:57:03.225 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:57:03.226 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:57:03.356 [INF] Received HTTP response headers after 128.6344ms - 200
+2025-03-02 18:57:03.357 [INF] End processing HTTP request after 132.5383ms - 200
+2025-03-02 18:57:03.358 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-02 18:57:03.359 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_2","VehicleId":"charging_2","ServiceSpots":{"parking_1":"parking_1_charging_2","parking_2":"parking_2_charging_2"}}
+2025-03-02 18:57:03.360 [INF] Транспортное средство charging_2 зарегистрировано. Гараж: garrage_charging_2. ServiceSpots: {"parking_1":"parking_1_charging_2","parking_2":"parking_2_charging_2"}
+2025-03-02 18:57:03.361 [INF] Инициируем регистрацию транспортного средства №3
+2025-03-02 18:57:03.361 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-02 18:57:03.362 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:57:03.363 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 18:57:03.490 [INF] Received HTTP response headers after 126.5383ms - 200
+2025-03-02 18:57:03.491 [INF] End processing HTTP request after 129.4093ms - 200
+2025-03-02 18:57:03.493 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-02 18:57:03.494 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_3","VehicleId":"charging_3","ServiceSpots":{"parking_2":"parking_2_charging_3","parking_1":"parking_1_charging_3"}}
+2025-03-02 18:57:03.495 [INF] Транспортное средство charging_3 зарегистрировано. Гараж: garrage_charging_3. ServiceSpots: {"parking_2":"parking_2_charging_3","parking_1":"parking_1_charging_3"}
+2025-03-02 18:57:03.809 [INF] User profile is available. Using 'C:\Users\Юля\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-02 18:57:04.142 [INF] Now listening on: https://localhost:7163
+2025-03-02 18:57:04.143 [INF] Now listening on: http://localhost:5117
+2025-03-02 18:57:04.144 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-02 18:57:04.145 [INF] Hosting environment: Development
+2025-03-02 18:57:04.146 [INF] Content root path: C:\Users\Юля\Documents\GitHub\charge\WebApplication7\
+2025-03-02 18:57:05.234 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - -
+2025-03-02 18:57:05.708 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - - - 200 - text/html;charset=utf-8 484.6700ms
+2025-03-02 18:57:05.847 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:57:05.888 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 39.7111ms
+2025-03-02 18:57:05.908 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - -
+2025-03-02 18:57:06.209 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 301.4121ms
+2025-03-02 18:57:06.338 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - -
+2025-03-02 18:57:06.932 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 593.4610ms
+2025-03-02 18:57:11.766 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:57:11.804 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:57:11.832 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:57:11.867 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:57:11.960 [INF] Executed ViewResult - view Index executed in 94.0897ms.
+2025-03-02 18:57:11.964 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 122.88ms
+2025-03-02 18:57:11.965 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:57:11.973 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 206.6803ms
+2025-03-02 18:57:12.017 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:57:12.017 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:57:12.029 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 12.3761ms
+2025-03-02 18:57:12.074 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 57.2914ms
+2025-03-02 18:57:26.707 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 38
+2025-03-02 18:57:26.715 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:57:26.737 [INF] Route matched with {action = "Update", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(ChargeModule.Models.AdminConfig) on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:57:26.785 [INF] Конфигурация обновлена: скорость = 20, попыток = 10
+2025-03-02 18:57:26.826 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 18:57:26.828 [INF] Executed action ChargeModule.Controllers.AdminController.Update (WebApplication7) in 87.7553ms
+2025-03-02 18:57:26.831 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:57:26.833 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 38 - 302 0 - 125.7727ms
+2025-03-02 18:57:26.839 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:57:26.841 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:57:26.842 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:57:26.851 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:57:26.855 [INF] Executed ViewResult - view Index executed in 4.8863ms.
+2025-03-02 18:57:26.857 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 6.7787ms
+2025-03-02 18:57:26.863 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:57:26.866 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 27.0285ms
+2025-03-02 18:57:26.935 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:57:26.936 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:57:26.942 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 5.4960ms
+2025-03-02 18:57:26.942 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.7347ms
+2025-03-02 18:57:47.273 [INF] Request starting HTTP/2 POST https://localhost:7163/Charge/request application/json 27
+2025-03-02 18:57:47.274 [INF] Executing endpoint 'ChargeModule.Controllers.ChargeController.RequestCharging (WebApplication7)'
+2025-03-02 18:57:47.294 [INF] Route matched with {action = "RequestCharging", controller = "Charge"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RequestCharging(ChargeModule.Models.ChargingRequest) on controller ChargeModule.Controllers.ChargeController (WebApplication7).
+2025-03-02 18:57:47.316 [INF] Обработка запроса зарядки для самолёта с парковкой parking_1
+2025-03-02 18:57:47.317 [INF] Транспортное средство charging_2 назначено для самолёта с парковкой parking_1
+2025-03-02 18:57:47.319 [INF] Запрашиваем маршрут от garrage_charging_2 до parking_1_charging_2 для транспортного средства charging
+2025-03-02 18:57:47.337 [INF] Отправляем запрос маршрута: {"from":"garrage_charging_2","to":"parking_1_charging_2","type":"charging"}
+2025-03-02 18:57:47.339 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/route"
+2025-03-02 18:57:47.340 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/route"
+2025-03-02 18:57:47.855 [INF] Received HTTP response headers after 514.1965ms - 200
+2025-03-02 18:57:47.857 [INF] End processing HTTP request after 517.8192ms - 200
+2025-03-02 18:57:47.858 [INF] Получен ответ на запрос маршрута, статус: "OK"
+2025-03-02 18:57:47.867 [INF] Полученный маршрут от garrage_charging_2 до parking_1_charging_2: garrage_charging_2 -> garrage -> garrage_to_parking_1 -> parking_1_charging_2
+2025-03-02 18:57:47.868 [INF] Полученный маршрут от garrage_charging_2 до parking_1_charging_2: garrage_charging_2 -> garrage -> garrage_to_parking_1 -> parking_1_charging_2
+2025-03-02 18:57:47.873 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_2","vehicleType":"charging","from":"garrage_charging_2","to":"garrage"}
+2025-03-02 18:57:47.875 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:57:47.880 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:57:48.001 [INF] Received HTTP response headers after 119.585ms - 200
+2025-03-02 18:57:48.002 [INF] End processing HTTP request after 127.0927ms - 200
+2025-03-02 18:57:48.006 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-02 18:57:48.032 [INF] Ответ на перемещение: {"Distance":10}
+2025-03-02 18:57:48.035 [INF] Запрос перемещения от garrage_charging_2 до garrage разрешен. Расстояние: 10
+2025-03-02 18:57:48.036 [INF] Ожидание 0.5 секунд для прохождения сегмента.
+2025-03-02 18:57:48.542 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_2","vehicleType":"charging","nodeId":"garrage"}
+2025-03-02 18:57:48.544 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:57:48.545 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:57:48.663 [INF] Received HTTP response headers after 116.8144ms - 200
+2025-03-02 18:57:48.665 [INF] End processing HTTP request after 120.8465ms - 200
+2025-03-02 18:57:48.667 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-02 18:57:48.669 [INF] Уведомление о прибытии для транспортного средства charging_2 получено успешно.
+2025-03-02 18:57:48.670 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_2","vehicleType":"charging","from":"garrage","to":"garrage_to_parking_1"}
+2025-03-02 18:57:48.672 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:57:48.673 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:57:48.794 [INF] Received HTTP response headers after 118.2923ms - 200
+2025-03-02 18:57:48.795 [INF] End processing HTTP request after 123.3294ms - 200
+2025-03-02 18:57:48.797 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-02 18:57:48.799 [INF] Ответ на перемещение: {"Distance":100}
+2025-03-02 18:57:48.803 [INF] Запрос перемещения от garrage до garrage_to_parking_1 разрешен. Расстояние: 100
+2025-03-02 18:57:48.811 [INF] Ожидание 5 секунд для прохождения сегмента.
+2025-03-02 18:57:50.113 [INF] Request starting HTTP/2 POST https://localhost:7163/Charge/request application/json 27
+2025-03-02 18:57:50.114 [INF] Executing endpoint 'ChargeModule.Controllers.ChargeController.RequestCharging (WebApplication7)'
+2025-03-02 18:57:50.117 [INF] Route matched with {action = "RequestCharging", controller = "Charge"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RequestCharging(ChargeModule.Models.ChargingRequest) on controller ChargeModule.Controllers.ChargeController (WebApplication7).
+2025-03-02 18:57:50.121 [INF] Обработка запроса зарядки для самолёта с парковкой parking_2
+2025-03-02 18:57:50.122 [INF] Транспортное средство charging_1 назначено для самолёта с парковкой parking_2
+2025-03-02 18:57:50.124 [INF] Запрашиваем маршрут от garrage_charging_1 до parking_2_charging_1 для транспортного средства charging
+2025-03-02 18:57:50.127 [INF] Отправляем запрос маршрута: {"from":"garrage_charging_1","to":"parking_2_charging_1","type":"charging"}
+2025-03-02 18:57:50.132 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/route"
+2025-03-02 18:57:50.133 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/route"
+2025-03-02 18:57:50.247 [INF] Received HTTP response headers after 112.2209ms - 200
+2025-03-02 18:57:50.248 [INF] End processing HTTP request after 116.1502ms - 200
+2025-03-02 18:57:50.249 [INF] Получен ответ на запрос маршрута, статус: "OK"
+2025-03-02 18:57:50.250 [INF] Полученный маршрут от garrage_charging_1 до parking_2_charging_1: garrage_charging_1 -> garrage -> garrage_to_parking_2 -> parking_2_charging_1
+2025-03-02 18:57:50.252 [INF] Полученный маршрут от garrage_charging_1 до parking_2_charging_1: garrage_charging_1 -> garrage -> garrage_to_parking_2 -> parking_2_charging_1
+2025-03-02 18:57:50.255 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_1","vehicleType":"charging","from":"garrage_charging_1","to":"garrage"}
+2025-03-02 18:57:50.257 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:57:50.259 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:57:50.380 [INF] Received HTTP response headers after 119.8863ms - 200
+2025-03-02 18:57:50.382 [INF] End processing HTTP request after 124.7924ms - 200
+2025-03-02 18:57:50.383 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-02 18:57:50.385 [INF] Ответ на перемещение: {"Distance":10}
+2025-03-02 18:57:50.386 [INF] Запрос перемещения от garrage_charging_1 до garrage разрешен. Расстояние: 10
+2025-03-02 18:57:50.387 [INF] Ожидание 0.5 секунд для прохождения сегмента.
+2025-03-02 18:57:50.902 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_1","vehicleType":"charging","nodeId":"garrage"}
+2025-03-02 18:57:50.904 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:57:50.905 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:57:51.026 [INF] Received HTTP response headers after 118.076ms - 200
+2025-03-02 18:57:51.027 [INF] End processing HTTP request after 123.6694ms - 200
+2025-03-02 18:57:51.029 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-02 18:57:51.031 [INF] Уведомление о прибытии для транспортного средства charging_1 получено успешно.
+2025-03-02 18:57:51.033 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_1","vehicleType":"charging","from":"garrage","to":"garrage_to_parking_2"}
+2025-03-02 18:57:51.035 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:57:51.036 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:57:51.154 [INF] Received HTTP response headers after 116.9945ms - 200
+2025-03-02 18:57:51.156 [INF] End processing HTTP request after 121.033ms - 200
+2025-03-02 18:57:51.158 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-02 18:57:51.160 [INF] Ответ на перемещение: {"Distance":100}
+2025-03-02 18:57:51.162 [INF] Запрос перемещения от garrage до garrage_to_parking_2 разрешен. Расстояние: 100
+2025-03-02 18:57:51.164 [INF] Ожидание 5 секунд для прохождения сегмента.
+2025-03-02 18:57:53.819 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_2","vehicleType":"charging","nodeId":"garrage_to_parking_1"}
+2025-03-02 18:57:53.822 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:57:53.823 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:57:53.947 [INF] Received HTTP response headers after 121.9208ms - 200
+2025-03-02 18:57:53.948 [INF] End processing HTTP request after 126.4867ms - 200
+2025-03-02 18:57:53.950 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-02 18:57:53.951 [INF] Уведомление о прибытии для транспортного средства charging_2 получено успешно.
+2025-03-02 18:57:53.953 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_2","vehicleType":"charging","from":"garrage_to_parking_1","to":"parking_1_charging_2"}
+2025-03-02 18:57:53.956 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:57:53.957 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:57:54.076 [INF] Received HTTP response headers after 115.351ms - 200
+2025-03-02 18:57:54.077 [INF] End processing HTTP request after 121.5056ms - 200
+2025-03-02 18:57:54.079 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-02 18:57:54.081 [INF] Ответ на перемещение: {"Distance":100}
+2025-03-02 18:57:54.082 [INF] Запрос перемещения от garrage_to_parking_1 до parking_1_charging_2 разрешен. Расстояние: 100
+2025-03-02 18:57:54.084 [INF] Ожидание 5 секунд для прохождения сегмента.
+2025-03-02 18:57:56.175 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_1","vehicleType":"charging","nodeId":"garrage_to_parking_2"}
+2025-03-02 18:57:56.177 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:57:56.179 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:57:56.300 [INF] Received HTTP response headers after 119.101ms - 200
+2025-03-02 18:57:56.301 [INF] End processing HTTP request after 124.0664ms - 200
+2025-03-02 18:57:56.304 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-02 18:57:56.306 [INF] Уведомление о прибытии для транспортного средства charging_1 получено успешно.
+2025-03-02 18:57:56.308 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_1","vehicleType":"charging","from":"garrage_to_parking_2","to":"parking_2_charging_1"}
+2025-03-02 18:57:56.310 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:57:56.311 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-02 18:57:56.444 [INF] Received HTTP response headers after 132.5246ms - 200
+2025-03-02 18:57:56.446 [INF] End processing HTTP request after 136.3653ms - 200
+2025-03-02 18:57:56.448 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-02 18:57:56.449 [INF] Ответ на перемещение: {"Distance":100}
+2025-03-02 18:57:56.451 [INF] Запрос перемещения от garrage_to_parking_2 до parking_2_charging_1 разрешен. Расстояние: 100
+2025-03-02 18:57:56.457 [INF] Ожидание 5 секунд для прохождения сегмента.
+2025-03-02 18:57:59.097 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_2","vehicleType":"charging","nodeId":"parking_1_charging_2"}
+2025-03-02 18:57:59.099 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:57:59.100 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:57:59.223 [INF] Received HTTP response headers after 121.092ms - 200
+2025-03-02 18:57:59.224 [INF] End processing HTTP request after 125.4455ms - 200
+2025-03-02 18:57:59.226 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-02 18:57:59.228 [INF] Уведомление о прибытии для транспортного средства charging_2 получено успешно.
+2025-03-02 18:57:59.229 [INF] Транспортное средство charging_2 начало зарядку на парковке parking_1_charging_2
+2025-03-02 18:57:59.250 [INF] Executing OkObjectResult, writing value of type 'ChargeModule.Models.ChargingResponse'.
+2025-03-02 18:57:59.257 [INF] Executed action ChargeModule.Controllers.ChargeController.RequestCharging (WebApplication7) in 11961.3902ms
+2025-03-02 18:57:59.261 [INF] Executed endpoint 'ChargeModule.Controllers.ChargeController.RequestCharging (WebApplication7)'
+2025-03-02 18:57:59.268 [INF] Request finished HTTP/2 POST https://localhost:7163/Charge/request application/json 27 - 200 - application/json;+charset=utf-8 11994.6909ms
+2025-03-02 18:57:59.277 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 38
+2025-03-02 18:57:59.282 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:57:59.283 [INF] Route matched with {action = "Update", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(ChargeModule.Models.AdminConfig) on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:57:59.293 [INF] Конфигурация обновлена: скорость = 20, попыток = 10
+2025-03-02 18:57:59.294 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 18:57:59.296 [INF] Executed action ChargeModule.Controllers.AdminController.Update (WebApplication7) in 3.836ms
+2025-03-02 18:57:59.297 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 18:57:59.299 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 38 - 302 0 - 21.2776ms
+2025-03-02 18:57:59.304 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 18:57:59.306 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:57:59.307 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 18:57:59.310 [INF] Executing ViewResult, running view Index.
+2025-03-02 18:57:59.315 [INF] Executed ViewResult - view Index executed in 4.8905ms.
+2025-03-02 18:57:59.319 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 9.1063ms
+2025-03-02 18:57:59.323 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 18:57:59.326 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 22.0532ms
+2025-03-02 18:57:59.359 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 18:57:59.364 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 18:57:59.374 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 10.1907ms
+2025-03-02 18:57:59.378 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.6234ms
+2025-03-02 18:58:01.475 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_1","vehicleType":"charging","nodeId":"parking_2_charging_1"}
+2025-03-02 18:58:01.477 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:58:01.478 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-02 18:58:01.623 [INF] Received HTTP response headers after 143.2115ms - 200
+2025-03-02 18:58:01.625 [INF] End processing HTTP request after 147.9896ms - 200
+2025-03-02 18:58:01.627 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-02 18:58:01.630 [INF] Уведомление о прибытии для транспортного средства charging_1 получено успешно.
+2025-03-02 18:58:01.632 [INF] Транспортное средство charging_1 начало зарядку на парковке parking_2_charging_1
+2025-03-02 18:58:01.634 [INF] Executing OkObjectResult, writing value of type 'ChargeModule.Models.ChargingResponse'.
+2025-03-02 18:58:01.636 [INF] Executed action ChargeModule.Controllers.ChargeController.RequestCharging (WebApplication7) in 11515.7379ms
+2025-03-02 18:58:01.639 [INF] Executed endpoint 'ChargeModule.Controllers.ChargeController.RequestCharging (WebApplication7)'
+2025-03-02 18:58:01.641 [INF] Request finished HTTP/2 POST https://localhost:7163/Charge/request application/json 27 - 200 - application/json;+charset=utf-8 11527.8898ms
+2025-03-02 19:02:14.404 [INF] Инициируем регистрацию транспортного средства №1
+2025-03-02 19:02:14.557 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-02 19:02:14.603 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 19:02:14.616 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 19:02:15.477 [INF] Received HTTP response headers after 851.7829ms - 200
+2025-03-02 19:02:15.482 [INF] End processing HTTP request after 915.5274ms - 200
+2025-03-02 19:02:15.488 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-02 19:02:15.781 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_1","VehicleId":"charging_1","ServiceSpots":{"parking_1":"parking_1_charging_1","parking_2":"parking_2_charging_1"}}
+2025-03-02 19:02:15.784 [INF] Транспортное средство charging_1 зарегистрировано. Гараж: garrage_charging_1. ServiceSpots: {"parking_1":"parking_1_charging_1","parking_2":"parking_2_charging_1"}
+2025-03-02 19:02:15.785 [INF] Инициируем регистрацию транспортного средства №2
+2025-03-02 19:02:15.786 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-02 19:02:15.787 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 19:02:15.788 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 19:02:15.905 [INF] Received HTTP response headers after 116.1859ms - 200
+2025-03-02 19:02:15.907 [INF] End processing HTTP request after 120.0568ms - 200
+2025-03-02 19:02:15.908 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-02 19:02:15.909 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_2","VehicleId":"charging_2","ServiceSpots":{"parking_1":"parking_1_charging_2","parking_2":"parking_2_charging_2"}}
+2025-03-02 19:02:15.910 [INF] Транспортное средство charging_2 зарегистрировано. Гараж: garrage_charging_2. ServiceSpots: {"parking_1":"parking_1_charging_2","parking_2":"parking_2_charging_2"}
+2025-03-02 19:02:15.911 [INF] Инициируем регистрацию транспортного средства №3
+2025-03-02 19:02:15.912 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-02 19:02:15.913 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 19:02:15.914 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-02 19:02:16.053 [INF] Received HTTP response headers after 138.8753ms - 200
+2025-03-02 19:02:16.055 [INF] End processing HTTP request after 141.8888ms - 200
+2025-03-02 19:02:16.057 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-02 19:02:16.058 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_3","VehicleId":"charging_3","ServiceSpots":{"parking_1":"parking_1_charging_3","parking_2":"parking_2_charging_3"}}
+2025-03-02 19:02:16.060 [INF] Транспортное средство charging_3 зарегистрировано. Гараж: garrage_charging_3. ServiceSpots: {"parking_1":"parking_1_charging_3","parking_2":"parking_2_charging_3"}
+2025-03-02 19:02:16.368 [INF] User profile is available. Using 'C:\Users\Юля\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-02 19:02:16.680 [INF] Now listening on: https://localhost:7163
+2025-03-02 19:02:16.682 [INF] Now listening on: http://localhost:5117
+2025-03-02 19:02:16.684 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-02 19:02:16.685 [INF] Hosting environment: Development
+2025-03-02 19:02:16.687 [INF] Content root path: C:\Users\Юля\Documents\GitHub\charge\WebApplication7\
+2025-03-02 19:02:17.266 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - -
+2025-03-02 19:02:17.792 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - - - 200 - text/html;charset=utf-8 534.4737ms
+2025-03-02 19:02:17.885 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 19:02:17.899 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 14.2608ms
+2025-03-02 19:02:17.996 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - -
+2025-03-02 19:02:18.175 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 178.8350ms
+2025-03-02 19:02:18.309 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - -
+2025-03-02 19:02:18.743 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 434.3898ms
+2025-03-02 19:02:29.244 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 19:02:29.298 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 19:02:29.320 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 19:02:29.341 [INF] Executing ViewResult, running view Index.
+2025-03-02 19:02:29.422 [INF] Executed ViewResult - view Index executed in 76.7783ms.
+2025-03-02 19:02:29.425 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 101.6822ms
+2025-03-02 19:02:29.430 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 19:02:29.434 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 19:02:29.435 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 19:02:29.440 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 196.7345ms
+2025-03-02 19:02:29.441 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 6.3813ms
+2025-03-02 19:02:29.476 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.6827ms
+2025-03-02 19:02:43.417 [INF] Request starting HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 38
+2025-03-02 19:02:43.424 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 19:02:43.434 [INF] Route matched with {action = "Update", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 19:02:43.445 [INF] Запрос обновления конфигурации:
+MovementSpeed=20&ConflictRetryCount=10
+2025-03-02 19:02:43.455 [INF] Конфигурация обновлена: скорость = 20, попыток = 10
+2025-03-02 19:02:43.495 [INF] Executing RedirectResult, redirecting to /charge/admin.
+2025-03-02 19:02:43.497 [INF] Executed action ChargeModule.Controllers.AdminController.Update (WebApplication7) in 59.9282ms
+2025-03-02 19:02:43.499 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Update (WebApplication7)'
+2025-03-02 19:02:43.503 [INF] Request finished HTTP/1.1 POST http://localhost:5117/charge/admin/update application/x-www-form-urlencoded 38 - 302 0 - 86.1182ms
+2025-03-02 19:02:43.506 [INF] Request starting HTTP/1.1 GET http://localhost:5117/charge/admin - -
+2025-03-02 19:02:43.509 [INF] Executing endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 19:02:43.510 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ChargeModule.Controllers.AdminController (WebApplication7).
+2025-03-02 19:02:43.513 [INF] Executing ViewResult, running view Index.
+2025-03-02 19:02:43.517 [INF] Executed ViewResult - view Index executed in 4.686ms.
+2025-03-02 19:02:43.519 [INF] Executed action ChargeModule.Controllers.AdminController.Index (WebApplication7) in 6.389ms
+2025-03-02 19:02:43.523 [INF] Executed endpoint 'ChargeModule.Controllers.AdminController.Index (WebApplication7)'
+2025-03-02 19:02:43.525 [INF] Request finished HTTP/1.1 GET http://localhost:5117/charge/admin - - - 200 - text/html;+charset=utf-8 19.2452ms
+2025-03-02 19:02:43.558 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_vs/browserLink - -
+2025-03-02 19:02:43.561 [INF] Request starting HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - -
+2025-03-02 19:02:43.571 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 3.0561ms
+2025-03-02 19:02:43.579 [INF] Request finished HTTP/1.1 GET http://localhost:5117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.9893ms

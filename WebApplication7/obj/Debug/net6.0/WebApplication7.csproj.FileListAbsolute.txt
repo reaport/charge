@@ -115,3 +115,5 @@ C:\Users\Юля\Documents\GitHub\charge\WebApplication7\obj\Debug\net6.0\refint\
 C:\Users\Юля\Documents\GitHub\charge\WebApplication7\obj\Debug\net6.0\WebApplication7.pdb
 C:\Users\Юля\Documents\GitHub\charge\WebApplication7\obj\Debug\net6.0\WebApplication7.genruntimeconfig.cache
 C:\Users\Юля\Documents\GitHub\charge\WebApplication7\obj\Debug\net6.0\ref\WebApplication7.dll
+C:\Users\Юля\Documents\GitHub\charge\WebApplication7\obj\Debug\net6.0\WebApplication7.RazorAssemblyInfo.cache
+C:\Users\Юля\Documents\GitHub\charge\WebApplication7\obj\Debug\net6.0\WebApplication7.RazorAssemblyInfo.cs
