@@ -1,0 +1,100 @@
+﻿@model ChargeModule.Models.AdminViewModel
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Админка ChargeModule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: red;
+        }
+        /* Красный заголовок */
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+
+        .config {
+            margin-bottom: 20px;
+        }
+
+        .btn-red {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+            .btn-red:hover {
+                background-color: darkred;
+            }
+
+        .busy {
+            background-color: #ffcccc;
+        }
+        /* Красный фон для занятых машин */
+    </style>
+</head>
+<body>
+    <h1>Административная панель ChargeModule</h1>
+
+    <h2>Конфигурация</h2>
+    <form method="post" action="/charge/admin/update">
+        <div class="config">
+            <label>Скорость движения (ед./сек): </label>
+            <input type="number" step="0.1" name="MovementSpeed" value="@Model.Config.MovementSpeed" required />
+        </div>
+        <div class="config">
+            <label>Количество попыток при конфликте: </label>
+            <input type="number" name="ConflictRetryCount" value="@Model.Config.ConflictRetryCount" required />
+        </div>
+        <button type="submit" class="btn-red">Обновить конфигурацию</button>
+    </form>
+
+    <h2>Список транспортных средств</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Идентификатор</th>
+                <th>Статус</th>
+                <th>Текущее местоположение (узел)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var vehicle in Model.Vehicles)
+            {
+                <tr class="@(vehicle.Status == "Busy" ? "busy" : "")">
+                    <td>@vehicle.VehicleId</td>
+                    <td>@vehicle.Status</td>
+                    <td>@vehicle.CurrentNode</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h2>Зарегистрировать транспортное средство</h2>
+    <form method="post" action="/charge/admin/registerVehicle">
+        <div>
+            <label>Тип транспортного средства: </label>
+            <input type="text" name="Type" value="charging" required />
+        </div>
+        <button type="submit" class="btn-red">Зарегистрировать</button>
+    </form>
+</body>
+</html>
