@@ -26,15 +26,156 @@ namespace ChargeModule.Services
         private readonly ILogger<ChargeService> _logger;
         private readonly ConcurrentDictionary<string, ChargingVehicle> _vehicles = new ConcurrentDictionary<string, ChargingVehicle>();
         private readonly object _lock = new object();
-        // Количество регистрируемых машин
         private const int VehicleCount = 3;
-        // Тип транспорта для зарядки (согласно спецификации ground control)
         private const string VehicleType = "charging";
+        // Скорость движения: единиц расстояния в секунду (например, 10)
+        private readonly double _travelSpeed;
+        // Словарь для хранения связи между узлом парковки самолёта и назначенной машиной
+        private readonly ConcurrentDictionary<string, string> _activeChargingRequests = new ConcurrentDictionary<string, string>();
 
         public ChargeService(IGroundControlClient groundControlClient, ILogger<ChargeService> logger)
         {
             _groundControlClient = groundControlClient;
             _logger = logger;
+            _travelSpeed = 20.0;
+        }
+
+        public async Task<ChargingResponse> ProcessChargingRequestAsync(ChargingRequest request, CancellationToken cancellationToken = default)
+        {
+            _logger.LogInformation("Обработка запроса зарядки для самолёта с парковкой {NodeId}", request.NodeId);
+
+            // Ищем свободное транспортное средство, которое обслуживает указанный узел
+            ChargingVehicle availableVehicle = _vehicles.Values
+                .FirstOrDefault(v => v.State == VehicleState.Free && v.ServiceSpots.ContainsKey(request.NodeId));
+
+            if (availableVehicle == null)
+            {
+                _logger.LogInformation("Нет свободного транспортного средства для парковки {NodeId}. Отправляем ответ wait=true.", request.NodeId);
+                return new ChargingResponse { Wait = true };
+            }
+
+            bool canAssignVehicle;
+            lock (_lock)
+            {
+                if (availableVehicle.State == VehicleState.Free)
+                {
+                    availableVehicle.State = VehicleState.Busy;
+                    _logger.LogInformation("Транспортное средство {VehicleId} назначено для самолёта с парковкой {NodeId}", availableVehicle.VehicleId, request.NodeId);
+                    canAssignVehicle = true;
+                }
+                else
+                {
+                    canAssignVehicle = false;
+                }
+            }
+            if (!canAssignVehicle)
+            {
+                _logger.LogInformation("Транспортное средство уже занято, отправляем ответ wait=true.");
+                return new ChargingResponse { Wait = true };
+            }
+
+            // При назначении в ProcessChargingRequestAsync, после успешного назначения:
+            _activeChargingRequests[request.NodeId] = availableVehicle.VehicleId;
+
+            // Текущая позиция – гараж транспортного средства
+            string currentPosition = availableVehicle.GarrageNodeId;
+            // Целевая точка – сервисный узел для данного самолёта (например, "parking_1_charging_1")
+            string targetPosition = availableVehicle.ServiceSpots[request.NodeId];
+
+            _logger.LogInformation("Запрашиваем маршрут от {CurrentPosition} до {TargetPosition} для транспортного средства {VehicleType}", currentPosition, targetPosition, VehicleType);
+            List<string> route = await _groundControlClient.GetRouteAsync(currentPosition, targetPosition, VehicleType);
+            if (route == null || route.Count < 2)
+            {
+                _logger.LogError("Маршрут не найден от {CurrentPosition} до {TargetPosition}", currentPosition, targetPosition);
+                throw new Exception("Маршрут не найден");
+            }
+
+            _logger.LogInformation("Полученный маршрут от {CurrentPosition} до {TargetPosition}: {Route}", currentPosition, targetPosition, string.Join(" -> ", route));
+
+            // Перемещаем транспортное средство по сегментам маршрута с учетом заданной скорости
+            for (int i = 0; i < route.Count - 1; i++)
+            {
+                string fromNode = route[i];
+                string toNode = route[i + 1];
+
+                double distance = await _groundControlClient.RequestMoveAsync(availableVehicle.VehicleId, VehicleType, fromNode, toNode);
+                _logger.LogInformation("Запрос перемещения от {FromNode} до {ToNode} разрешен. Расстояние: {Distance}", fromNode, toNode, distance);
+
+                double delaySeconds = distance / _travelSpeed;
+                _logger.LogInformation("Ожидание {DelaySeconds} секунд для прохождения сегмента.", delaySeconds);
+                await Task.Delay(TimeSpan.FromSeconds(delaySeconds), cancellationToken);
+
+                await _groundControlClient.NotifyArrivalAsync(availableVehicle.VehicleId, VehicleType, toNode);
+            }
+
+            _logger.LogInformation("Транспортное средство {VehicleId} начало зарядку на парковке {TargetPosition}", availableVehicle.VehicleId, targetPosition);
+            return new ChargingResponse { Wait = false };
+        }
+
+        public async Task ProcessChargingCompletionAsync(ChargingCompletionRequest request)
+        {
+            _logger.LogInformation("Обработка завершения зарядки для самолёта с парковкой {NodeId}", request.NodeId);
+
+            if (!_activeChargingRequests.TryGetValue(request.NodeId, out var assignedVehicleId))
+            {
+                _logger.LogError("Нет зарегистрированной машины для завершения зарядки на парковке {NodeId}", request.NodeId);
+                throw new Exception("Нет транспортного средства, обслуживающего данный запрос");
+            }
+
+            ChargingVehicle vehicle = _vehicles.Values.FirstOrDefault(v => v.VehicleId == assignedVehicleId);
+            if (vehicle == null)
+            {
+                _logger.LogError("Машина с идентификатором {VehicleId} не найдена для завершения зарядки", assignedVehicleId);
+                throw new Exception("Нет транспортного средства, обслуживающего данный запрос");
+            }
+
+            // Удаляем связь, т.к. запрос завершения обрабатывается
+            _activeChargingRequests.TryRemove(request.NodeId, out _);
+
+            // Текущая позиция – сервисный узел, привязанный к данному request.NodeId (например, "parking_1_charging_1")
+            string currentPosition = vehicle.ServiceSpots[request.NodeId];
+            // Целевая точка – гараж транспортного средства (например, "garrage_charging_1")
+            string garageSpot = vehicle.GarrageNodeId;
+
+            _logger.LogInformation("Запрашиваем маршрут от {CurrentPosition} до {GarageSpot} для транспортного средства {VehicleId}",
+                currentPosition, garageSpot, vehicle.VehicleId);
+            List<string> route = await _groundControlClient.GetRouteAsync(currentPosition, garageSpot, VehicleType);
+            if (route == null || route.Count < 1)
+            {
+                _logger.LogError("Маршрут не найден от {CurrentPosition} до {GarageSpot}", currentPosition, garageSpot);
+                throw new Exception("Маршрут не найден");
+            }
+
+            _logger.LogInformation("Полученный маршрут от {CurrentPosition} до {GarageSpot}: {Route}",
+                currentPosition, garageSpot, string.Join(" -> ", route));
+
+            if (route.Count > 1)
+            {
+                for (int i = 0; i < route.Count - 1; i++)
+                {
+                    string fromNode = route[i];
+                    string toNode = route[i + 1];
+
+                    double distance = await _groundControlClient.RequestMoveAsync(vehicle.VehicleId, VehicleType, fromNode, toNode);
+                    _logger.LogInformation("Запрос перемещения от {FromNode} до {ToNode} разрешен. Расстояние: {Distance}", fromNode, toNode, distance);
+
+                    double delaySeconds = distance / _travelSpeed;
+                    _logger.LogInformation("Ожидание {DelaySeconds} секунд для прохождения сегмента.", delaySeconds);
+                    await Task.Delay(TimeSpan.FromSeconds(delaySeconds));
+
+                    await _groundControlClient.NotifyArrivalAsync(vehicle.VehicleId, VehicleType, toNode);
+                }
+            }
+            else
+            {
+                _logger.LogInformation("Перемещение не требуется, машина уже находится в нужном месте: {CurrentPosition}", currentPosition);
+            }
+
+            lock (_lock)
+            {
+                vehicle.State = VehicleState.Free;
+            }
+            _logger.LogInformation("Транспортное средство {VehicleId} теперь свободно в гараже.", vehicle.VehicleId);
         }
 
         public async Task InitializeVehiclesAsync()
@@ -65,128 +206,6 @@ namespace ChargeModule.Services
                 }
             }
 
-        }
-
-        public async Task<ChargingResponse> ProcessChargingRequestAsync(ChargingRequest request, CancellationToken cancellationToken = default)
-        {
-            _logger.LogInformation("Processing charging request for airplane node {NodeId}", request.NodeId);
-            ChargingVehicle availableVehicle = null;
-
-            // Ждем, пока появится свободная машина
-            while (availableVehicle == null)
-            {
-                availableVehicle = _vehicles.Values.FirstOrDefault(v => v.State == VehicleState.Free && v.ServiceSpots.ContainsKey(request.NodeId));
-                if (availableVehicle == null)
-                {
-                    // Если машины нет, возвращаем wait:true и ждем 2 секунды
-                    _logger.LogInformation("No free vehicle available for airplane node {NodeId}. Waiting...", request.NodeId);
-                    await Task.Delay(TimeSpan.FromSeconds(2), cancellationToken);
-                }
-            }
-
-            bool canAssignVehicle;
-            lock (_lock)
-            {
-                if (availableVehicle.State == VehicleState.Free)
-                {
-                    availableVehicle.State = VehicleState.Busy;
-                    _logger.LogInformation("Vehicle {VehicleId} assigned to airplane node {NodeId}", availableVehicle.VehicleId, request.NodeId);
-                    canAssignVehicle = true;
-                }
-                else
-                {
-                    canAssignVehicle = false;
-                }
-            }
-
-            if (!canAssignVehicle)
-            {
-                // Если в промежутке состояние изменилось – повторно обрабатываем запрос
-                return await ProcessChargingRequestAsync(request, cancellationToken);
-            }
-
-
-            // Получаем парковочное место для машины для данного самолёта
-            string serviceSpot = availableVehicle.ServiceSpots[request.NodeId];
-
-            // Определяем текущую позицию машины (она находится в гараже)
-            string currentPosition = availableVehicle.GarrageNodeId;
-            // Получаем целевую точку из сопоставления: парковка для самолёта с учетом идентификатора машины
-            string targetPosition = availableVehicle.ServiceSpots[request.NodeId];
-
-            // Запрашиваем маршрут от текущей позиции до целевой точки
-            List<string> route = await _groundControlClient.GetRouteAsync(currentPosition, targetPosition, VehicleType);
-            if (route == null || route.Count < 2)
-            {
-                _logger.LogError("Маршрут не найден от {From} до {To}", currentPosition, targetPosition);
-                throw new Exception("Маршрут не найден");
-            }
-
-
-            // Последовательно проходим маршрут. Для простоты будем двигаться парами узлов.
-            for (int i = 0; i < route.Count - 1; i++)
-            {
-                string currentNode = route[i];
-                string nextNode = route[i + 1];
-
-                // Запрашиваем разрешение на перемещение
-                await _groundControlClient.RequestMoveAsync(availableVehicle.VehicleId, VehicleType, currentNode, nextNode);
-                // Имитация движения – ожидание прибытия (можно заменить логикой определения времени движения)
-                await Task.Delay(TimeSpan.FromSeconds(1), cancellationToken);
-                // Уведомляем о прибытии
-                await _groundControlClient.NotifyArrivalAsync(availableVehicle.VehicleId, VehicleType, nextNode);
-            }
-
-            // После прибытия запускаем процесс зарядки (в реальной системе здесь запускается логика зарядки)
-            _logger.LogInformation("Vehicle {VehicleId} started charging at airplane node {NodeId}", availableVehicle.VehicleId, request.NodeId);
-
-            // Возвращаем ответ, что ожидание не требуется
-            return new ChargingResponse { Wait = false };
-        }
-
-        public async Task ProcessChargingCompletionAsync(ChargingCompletionRequest request)
-        {
-            _logger.LogInformation("Обработка завершения зарядки для самолёта с парковкой {NodeId}", request.NodeId);
-
-            // Находим транспорт, обслуживающий данный самолёт (предполагается, что связь сохранена)
-            ChargingVehicle vehicle = _vehicles.Values.FirstOrDefault(v => v.State == VehicleState.Busy && v.ServiceSpots.ContainsKey(request.NodeId));
-            if (vehicle == null)
-            {
-                _logger.LogError("Не найден транспорт, обслуживающий самолёт с парковкой {NodeId}", request.NodeId);
-                throw new Exception("Нет транспортного средства, обслуживающего данный самолёт");
-            }
-
-            // Текущая позиция транспортного средства – это его сервисное парковочное место для данного самолёта
-            string currentPosition = vehicle.ServiceSpots[request.NodeId];
-
-            // Целевая точка – гараж транспортного средства
-            string garageSpot = vehicle.GarrageNodeId;
-
-            // Запрашиваем маршрут от текущей позиции до гаража
-            List<string> route = await _groundControlClient.GetRouteAsync(currentPosition, garageSpot, VehicleType);
-            if (route == null || route.Count < 2)
-            {
-                _logger.LogError("Маршрут не найден от {From} до {To}", currentPosition, garageSpot);
-                throw new Exception("Маршрут не найден");
-            }
-
-            // Проходим маршрут поэтапно
-            for (int i = 0; i < route.Count - 1; i++)
-            {
-                string currentNode = route[i];
-                string nextNode = route[i + 1];
-
-                await _groundControlClient.RequestMoveAsync(vehicle.VehicleId, VehicleType, currentNode, nextNode);
-                await Task.Delay(TimeSpan.FromSeconds(1));
-                await _groundControlClient.NotifyArrivalAsync(vehicle.VehicleId, VehicleType, nextNode);
-            }
-
-            // По прибытии в гараж – помечаем машину как свободную
-            lock (_lock)
-            {
-                vehicle.State = VehicleState.Free;
-            }
-            _logger.LogInformation("Транспортное средство {VehicleId} теперь свободно в гараже", vehicle.VehicleId);
         }
 
     }

@@ -74,14 +74,36 @@ namespace ChargeModule.Services
             string requestBody = JsonSerializer.Serialize(requestPayload);
             _logger.LogInformation("Отправляем запрос на перемещение: {RequestBody}", requestBody);
 
-            var response = await _httpClient.PostAsJsonAsync("/move", requestPayload);
-            _logger.LogInformation("Получен ответ на запрос перемещения, статус: {StatusCode}", response.StatusCode);
+            HttpResponseMessage response = null;
+            int retryCount = 0;
+            const int maxRetries = 15;
+            while (true)
+            {
+                response = await _httpClient.PostAsJsonAsync("/move", requestPayload);
+                _logger.LogInformation("Получен ответ на запрос перемещения, статус: {StatusCode}", response.StatusCode);
+
+                if (response.StatusCode == System.Net.HttpStatusCode.Conflict)
+                {
+                    _logger.LogWarning("Статус Conflict при запросе перемещения от {From} до {To} для транспортного средства {VehicleId}. Ожидание 2 секунды и повторная попытка.", from, to, vehicleId);
+                    await Task.Delay(TimeSpan.FromSeconds(2));
+                    retryCount++;
+                    if (retryCount >= maxRetries)
+                    {
+                        _logger.LogError("Превышено число попыток ({MaxRetries}) для запроса перемещения от {From} до {To} для транспортного средства {VehicleId}.", maxRetries, from, to, vehicleId);
+                        break;
+                    }
+                    continue;
+                }
+                break;
+            }
+
             response.EnsureSuccessStatusCode();
             var moveResponse = await response.Content.ReadFromJsonAsync<MoveResponse>();
             string responseBody = JsonSerializer.Serialize(moveResponse);
             _logger.LogInformation("Ответ на перемещение: {ResponseBody}", responseBody);
             return moveResponse.Distance;
         }
+
 
         public async Task NotifyArrivalAsync(string vehicleId, string vehicleType, string nodeId)
         {

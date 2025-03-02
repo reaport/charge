@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XgtHmzxj7BAJ4Ei9pioS0Ul12VnWKavaC9c1O7CSk49yRKaxkVGcn2OMJx3l5nTuxqgYghUSj0rQH9w3f0ijbA==",
+  "dgSpecHash": "ig5qOXrmTe1sNkZnF7YCoduQP1sl7DowxSdp2fgFfWd20DENLNBfOUiwDFWXE4Xm930E5BEYseMfFkXfvixSig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Юля\\source\\repos\\WebApplication7\\WebApplication7\\WebApplication7.csproj",
+  "projectFilePath": "C:\\Users\\Юля\\Documents\\GitHub\\charge\\WebApplication7\\WebApplication7.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Юля\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Юля\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg.sha512",
