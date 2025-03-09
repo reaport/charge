@@ -1,0 +1,336 @@
+2025-03-09 16:05:57.939 [INF] Инициируем регистрацию транспортного средства №1
+2025-03-09 16:05:58.035 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-09 16:05:58.076 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-09 16:05:58.089 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-09 16:06:00.133 [INF] Received HTTP response headers after 2028.2139ms - 200
+2025-03-09 16:06:00.143 [INF] End processing HTTP request after 2099.5316ms - 200
+2025-03-09 16:06:00.154 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-09 16:06:00.708 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_1","VehicleId":"charging_1","ServiceSpots":{"parking_1":"parking_1_charging_1","parking_2":"parking_2_charging_1"}}
+2025-03-09 16:06:00.710 [INF] Транспортное средство charging_1 зарегистрировано. Гараж: garrage_charging_1. ServiceSpots: {"parking_1":"parking_1_charging_1","parking_2":"parking_2_charging_1"}
+2025-03-09 16:06:00.712 [INF] Инициируем регистрацию транспортного средства №2
+2025-03-09 16:06:00.713 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-09 16:06:00.714 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-09 16:06:00.715 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-09 16:06:00.732 [INF] Received HTTP response headers after 16.2888ms - 200
+2025-03-09 16:06:00.733 [INF] End processing HTTP request after 19.3727ms - 200
+2025-03-09 16:06:00.735 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-09 16:06:00.736 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_2","VehicleId":"charging_2","ServiceSpots":{"parking_1":"parking_1_charging_2","parking_2":"parking_2_charging_2"}}
+2025-03-09 16:06:00.737 [INF] Транспортное средство charging_2 зарегистрировано. Гараж: garrage_charging_2. ServiceSpots: {"parking_1":"parking_1_charging_2","parking_2":"parking_2_charging_2"}
+2025-03-09 16:06:00.738 [INF] Инициируем регистрацию транспортного средства №3
+2025-03-09 16:06:00.739 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-09 16:06:00.741 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-09 16:06:00.742 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-09 16:06:00.753 [INF] Received HTTP response headers after 10.5585ms - 200
+2025-03-09 16:06:00.754 [INF] End processing HTTP request after 13.8894ms - 200
+2025-03-09 16:06:00.755 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-09 16:06:00.756 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_3","VehicleId":"charging_3","ServiceSpots":{"parking_1":"parking_1_charging_3","parking_2":"parking_2_charging_3"}}
+2025-03-09 16:06:00.759 [INF] Транспортное средство charging_3 зарегистрировано. Гараж: garrage_charging_3. ServiceSpots: {"parking_1":"parking_1_charging_3","parking_2":"parking_2_charging_3"}
+2025-03-09 16:06:02.147 [INF] User profile is available. Using 'C:\Users\Юля\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-09 16:06:03.015 [INF] Now listening on: https://localhost:7163
+2025-03-09 16:06:03.105 [INF] Now listening on: http://localhost:5117
+2025-03-09 16:06:03.110 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-09 16:06:03.116 [INF] Hosting environment: Development
+2025-03-09 16:06:03.129 [INF] Content root path: C:\Users\Юля\Documents\GitHub\charge\WebApplication7\
+2025-03-09 16:06:06.454 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - -
+2025-03-09 16:06:06.897 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - - - 200 - text/html;charset=utf-8 455.4050ms
+2025-03-09 16:06:06.990 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - -
+2025-03-09 16:06:07.002 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 11.7617ms
+2025-03-09 16:06:07.339 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - -
+2025-03-09 16:06:07.526 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 186.8882ms
+2025-03-09 16:06:07.608 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - -
+2025-03-09 16:06:07.722 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/favicon-32x32.png - -
+2025-03-09 16:06:07.762 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-03-09 16:06:07.775 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/favicon-32x32.png - - - 200 628 image/png 66.4174ms
+2025-03-09 16:06:07.970 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 362.1135ms
+2025-03-09 16:20:30.228 [INF] Request starting HTTP/2 GET https://localhost:7163/ - -
+2025-03-09 16:20:30.279 [INF] Request finished HTTP/2 GET https://localhost:7163/ - - - 404 0 - 50.9701ms
+2025-03-09 16:20:36.458 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - -
+2025-03-09 16:20:36.462 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - - - 200 - text/html;charset=utf-8 3.5437ms
+2025-03-09 16:20:36.522 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - -
+2025-03-09 16:20:36.529 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 6.2710ms
+2025-03-09 16:20:36.558 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - -
+2025-03-09 16:20:36.573 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.6775ms
+2025-03-09 16:20:36.689 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - -
+2025-03-09 16:20:36.693 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.0189ms
+2025-03-09 16:21:09.836 [INF] Request starting HTTP/2 POST https://localhost:7163/Charge/request application/json 27
+2025-03-09 16:21:09.842 [INF] Executing endpoint 'ChargeModule.Controllers.ChargeController.RequestCharging (WebApplication7)'
+2025-03-09 16:21:09.894 [INF] Route matched with {action = "RequestCharging", controller = "Charge"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RequestCharging(ChargeModule.Models.ChargingRequest) on controller ChargeModule.Controllers.ChargeController (WebApplication7).
+2025-03-09 16:21:09.977 [INF] Обработка запроса зарядки для самолёта с парковкой parking_1
+2025-03-09 16:21:09.979 [INF] Транспортное средство charging_1 назначено для самолёта с парковкой parking_1
+2025-03-09 16:21:09.980 [INF] Запрашиваем маршрут от garrage_charging_1 до parking_1_charging_1 для транспортного средства charging
+2025-03-09 16:21:09.995 [INF] Отправляем запрос маршрута: {"from":"garrage_charging_1","to":"parking_1_charging_1","type":"charging"}
+2025-03-09 16:21:09.997 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/route"
+2025-03-09 16:21:09.998 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/route"
+2025-03-09 16:21:11.690 [INF] Received HTTP response headers after 1689.1837ms - 200
+2025-03-09 16:21:11.691 [INF] End processing HTTP request after 1694.0125ms - 200
+2025-03-09 16:21:11.692 [INF] Получен ответ на запрос маршрута, статус: "OK"
+2025-03-09 16:21:11.699 [INF] Полученный маршрут от garrage_charging_1 до parking_1_charging_1: garrage_charging_1 -> garrage -> garrage_to_parking_1 -> parking_1_charging_1
+2025-03-09 16:21:11.702 [INF] Полученный маршрут от garrage_charging_1 до parking_1_charging_1: garrage_charging_1 -> garrage -> garrage_to_parking_1 -> parking_1_charging_1
+2025-03-09 16:21:11.709 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_1","vehicleType":"charging","from":"garrage_charging_1","to":"garrage"}
+2025-03-09 16:21:11.710 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-09 16:21:11.711 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-09 16:21:11.840 [INF] Received HTTP response headers after 127.8463ms - 200
+2025-03-09 16:21:11.841 [INF] End processing HTTP request after 131.4121ms - 200
+2025-03-09 16:21:11.844 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-09 16:21:11.865 [INF] Ответ на перемещение: {"Distance":10}
+2025-03-09 16:21:11.867 [INF] Запрос перемещения от garrage_charging_1 до garrage разрешен. Расстояние: 10
+2025-03-09 16:21:11.869 [INF] Ожидание 0.5 секунд для прохождения сегмента.
+2025-03-09 16:21:12.376 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_1","vehicleType":"charging","nodeId":"garrage"}
+2025-03-09 16:21:12.377 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-09 16:21:12.378 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-09 16:21:12.505 [INF] Received HTTP response headers after 124.9894ms - 200
+2025-03-09 16:21:12.506 [INF] End processing HTTP request after 128.4621ms - 200
+2025-03-09 16:21:12.507 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-09 16:21:12.508 [INF] Уведомление о прибытии для транспортного средства charging_1 получено успешно.
+2025-03-09 16:21:12.509 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_1","vehicleType":"charging","from":"garrage","to":"garrage_to_parking_1"}
+2025-03-09 16:21:12.511 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-09 16:21:12.512 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-09 16:21:12.653 [INF] Received HTTP response headers after 139.8451ms - 200
+2025-03-09 16:21:12.655 [INF] End processing HTTP request after 143.6779ms - 200
+2025-03-09 16:21:12.657 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-09 16:21:12.658 [INF] Ответ на перемещение: {"Distance":100}
+2025-03-09 16:21:12.659 [INF] Запрос перемещения от garrage до garrage_to_parking_1 разрешен. Расстояние: 100
+2025-03-09 16:21:12.661 [INF] Ожидание 5 секунд для прохождения сегмента.
+2025-03-09 16:21:17.674 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_1","vehicleType":"charging","nodeId":"garrage_to_parking_1"}
+2025-03-09 16:21:17.675 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-09 16:21:17.677 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-09 16:21:17.820 [INF] Received HTTP response headers after 141.6467ms - 200
+2025-03-09 16:21:17.822 [INF] End processing HTTP request after 146.4206ms - 200
+2025-03-09 16:21:17.824 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-09 16:21:17.825 [INF] Уведомление о прибытии для транспортного средства charging_1 получено успешно.
+2025-03-09 16:21:17.827 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_1","vehicleType":"charging","from":"garrage_to_parking_1","to":"parking_1_charging_1"}
+2025-03-09 16:21:17.830 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-09 16:21:17.831 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-09 16:21:17.977 [INF] Received HTTP response headers after 145.0056ms - 200
+2025-03-09 16:21:17.979 [INF] End processing HTTP request after 148.3587ms - 200
+2025-03-09 16:21:17.980 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-09 16:21:17.981 [INF] Ответ на перемещение: {"Distance":100}
+2025-03-09 16:21:17.983 [INF] Запрос перемещения от garrage_to_parking_1 до parking_1_charging_1 разрешен. Расстояние: 100
+2025-03-09 16:21:17.985 [INF] Ожидание 5 секунд для прохождения сегмента.
+2025-03-09 16:21:22.991 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_1","vehicleType":"charging","nodeId":"parking_1_charging_1"}
+2025-03-09 16:21:22.994 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-09 16:21:22.996 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-09 16:21:23.155 [INF] Received HTTP response headers after 157.2383ms - 200
+2025-03-09 16:21:23.157 [INF] End processing HTTP request after 163.4277ms - 200
+2025-03-09 16:21:23.159 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-09 16:21:23.160 [INF] Уведомление о прибытии для транспортного средства charging_1 получено успешно.
+2025-03-09 16:21:23.162 [INF] Транспортное средство charging_1 начало зарядку на парковке parking_1_charging_1
+2025-03-09 16:21:23.173 [INF] Executing OkObjectResult, writing value of type 'ChargeModule.Models.ChargingResponse'.
+2025-03-09 16:21:23.188 [INF] Executed action ChargeModule.Controllers.ChargeController.RequestCharging (WebApplication7) in 13284.0466ms
+2025-03-09 16:21:23.191 [INF] Executed endpoint 'ChargeModule.Controllers.ChargeController.RequestCharging (WebApplication7)'
+2025-03-09 16:21:23.198 [INF] Request finished HTTP/2 POST https://localhost:7163/Charge/request application/json 27 - 200 - application/json;+charset=utf-8 13362.3311ms
+2025-03-09 16:22:04.882 [INF] Request starting HTTP/2 POST https://localhost:7163/Charge/complete application/json 27
+2025-03-09 16:22:04.907 [INF] Executing endpoint 'ChargeModule.Controllers.ChargeController.CompleteCharging (WebApplication7)'
+2025-03-09 16:22:04.912 [INF] Route matched with {action = "CompleteCharging", controller = "Charge"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompleteCharging(ChargeModule.Models.ChargingCompletionRequest) on controller ChargeModule.Controllers.ChargeController (WebApplication7).
+2025-03-09 16:22:04.917 [INF] Обработка завершения зарядки для самолёта с парковкой parking_1
+2025-03-09 16:22:04.918 [INF] Запрашиваем маршрут от parking_1_charging_1 до garrage_charging_1 для транспортного средства charging_1
+2025-03-09 16:22:04.920 [INF] Отправляем запрос маршрута: {"from":"parking_1_charging_1","to":"garrage_charging_1","type":"charging"}
+2025-03-09 16:22:04.921 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/route"
+2025-03-09 16:22:04.922 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/route"
+2025-03-09 16:22:05.075 [INF] Received HTTP response headers after 152.2108ms - 200
+2025-03-09 16:22:05.076 [INF] End processing HTTP request after 154.6606ms - 200
+2025-03-09 16:22:05.077 [INF] Получен ответ на запрос маршрута, статус: "OK"
+2025-03-09 16:22:05.077 [INF] Полученный маршрут от parking_1_charging_1 до garrage_charging_1: parking_1_charging_1 -> garrage_from_parking_1 -> garrage -> garrage_charging_1
+2025-03-09 16:22:05.079 [INF] Полученный маршрут от parking_1_charging_1 до garrage_charging_1: parking_1_charging_1 -> garrage_from_parking_1 -> garrage -> garrage_charging_1
+2025-03-09 16:22:05.080 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_1","vehicleType":"charging","from":"parking_1_charging_1","to":"garrage_from_parking_1"}
+2025-03-09 16:22:05.081 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-09 16:22:05.082 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-09 16:22:05.256 [INF] Received HTTP response headers after 173.1169ms - 200
+2025-03-09 16:22:05.257 [INF] End processing HTTP request after 175.6729ms - 200
+2025-03-09 16:22:05.258 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-09 16:22:05.259 [INF] Ответ на перемещение: {"Distance":100}
+2025-03-09 16:22:05.260 [INF] Запрос перемещения от parking_1_charging_1 до garrage_from_parking_1 разрешен. Расстояние: 100
+2025-03-09 16:22:05.261 [INF] Ожидание 5 секунд для прохождения сегмента.
+2025-03-09 16:22:10.290 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_1","vehicleType":"charging","nodeId":"garrage_from_parking_1"}
+2025-03-09 16:22:10.293 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-09 16:22:10.295 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-09 16:22:10.423 [INF] Received HTTP response headers after 125.9736ms - 200
+2025-03-09 16:22:10.424 [INF] End processing HTTP request after 131.4205ms - 200
+2025-03-09 16:22:10.426 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-09 16:22:10.427 [INF] Уведомление о прибытии для транспортного средства charging_1 получено успешно.
+2025-03-09 16:22:10.429 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_1","vehicleType":"charging","from":"garrage_from_parking_1","to":"garrage"}
+2025-03-09 16:22:10.431 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-09 16:22:10.432 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-09 16:22:10.567 [INF] Received HTTP response headers after 133.0491ms - 200
+2025-03-09 16:22:10.568 [INF] End processing HTTP request after 137.0585ms - 200
+2025-03-09 16:22:10.569 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-09 16:22:10.571 [INF] Ответ на перемещение: {"Distance":100}
+2025-03-09 16:22:10.572 [INF] Запрос перемещения от garrage_from_parking_1 до garrage разрешен. Расстояние: 100
+2025-03-09 16:22:10.574 [INF] Ожидание 5 секунд для прохождения сегмента.
+2025-03-09 16:22:15.591 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_1","vehicleType":"charging","nodeId":"garrage"}
+2025-03-09 16:22:15.592 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-09 16:22:15.594 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-09 16:22:15.739 [INF] Received HTTP response headers after 143.9927ms - 200
+2025-03-09 16:22:15.740 [INF] End processing HTTP request after 147.2796ms - 200
+2025-03-09 16:22:15.741 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-09 16:22:15.742 [INF] Уведомление о прибытии для транспортного средства charging_1 получено успешно.
+2025-03-09 16:22:15.744 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_1","vehicleType":"charging","from":"garrage","to":"garrage_charging_1"}
+2025-03-09 16:22:15.746 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-09 16:22:15.748 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-09 16:22:15.902 [INF] Received HTTP response headers after 153.1851ms - 200
+2025-03-09 16:22:15.904 [INF] End processing HTTP request after 157.8829ms - 200
+2025-03-09 16:22:15.905 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-09 16:22:15.907 [INF] Ответ на перемещение: {"Distance":10}
+2025-03-09 16:22:15.910 [INF] Запрос перемещения от garrage до garrage_charging_1 разрешен. Расстояние: 10
+2025-03-09 16:22:15.912 [INF] Ожидание 0.5 секунд для прохождения сегмента.
+2025-03-09 16:22:16.414 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_1","vehicleType":"charging","nodeId":"garrage_charging_1"}
+2025-03-09 16:22:16.415 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-09 16:22:16.416 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-09 16:22:16.559 [INF] Received HTTP response headers after 141.5273ms - 200
+2025-03-09 16:22:16.561 [INF] End processing HTTP request after 146.1459ms - 200
+2025-03-09 16:22:16.563 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-09 16:22:16.565 [INF] Уведомление о прибытии для транспортного средства charging_1 получено успешно.
+2025-03-09 16:22:16.567 [INF] Транспортное средство charging_1 теперь свободно в гараже.
+2025-03-09 16:22:16.576 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-03-09 16:22:16.577 [INF] Executed action ChargeModule.Controllers.ChargeController.CompleteCharging (WebApplication7) in 11664.0393ms
+2025-03-09 16:22:16.579 [INF] Executed endpoint 'ChargeModule.Controllers.ChargeController.CompleteCharging (WebApplication7)'
+2025-03-09 16:22:16.581 [INF] Request finished HTTP/2 POST https://localhost:7163/Charge/complete application/json 27 - 204 - - 11699.0052ms
+2025-03-09 16:39:21.786 [INF] Инициируем регистрацию транспортного средства №1
+2025-03-09 16:39:21.955 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-09 16:39:22.009 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-09 16:39:22.025 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-09 16:39:23.933 [INF] Received HTTP response headers after 1901.946ms - 200
+2025-03-09 16:39:23.938 [INF] End processing HTTP request after 1971.5973ms - 200
+2025-03-09 16:39:23.944 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-09 16:39:24.151 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_4","VehicleId":"charging_4","ServiceSpots":{"parking_1":"parking_1_charging_4","parking_2":"parking_2_charging_4"}}
+2025-03-09 16:39:24.153 [INF] Транспортное средство charging_4 зарегистрировано. Гараж: garrage_charging_4. ServiceSpots: {"parking_1":"parking_1_charging_4","parking_2":"parking_2_charging_4"}
+2025-03-09 16:39:24.155 [INF] Инициируем регистрацию транспортного средства №2
+2025-03-09 16:39:24.155 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-09 16:39:24.156 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-09 16:39:24.157 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-09 16:39:24.273 [INF] Received HTTP response headers after 114.9957ms - 200
+2025-03-09 16:39:24.274 [INF] End processing HTTP request after 117.8283ms - 200
+2025-03-09 16:39:24.275 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-09 16:39:24.276 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_5","VehicleId":"charging_5","ServiceSpots":{"parking_1":"parking_1_charging_5","parking_2":"parking_2_charging_5"}}
+2025-03-09 16:39:24.276 [INF] Транспортное средство charging_5 зарегистрировано. Гараж: garrage_charging_5. ServiceSpots: {"parking_1":"parking_1_charging_5","parking_2":"parking_2_charging_5"}
+2025-03-09 16:39:24.277 [INF] Инициируем регистрацию транспортного средства №3
+2025-03-09 16:39:24.278 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-09 16:39:24.278 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-09 16:39:24.279 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-09 16:39:24.405 [INF] Received HTTP response headers after 125.4984ms - 200
+2025-03-09 16:39:24.407 [INF] End processing HTTP request after 128.556ms - 200
+2025-03-09 16:39:24.408 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-09 16:39:24.410 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_6","VehicleId":"charging_6","ServiceSpots":{"parking_1":"parking_1_charging_6","parking_2":"parking_2_charging_6"}}
+2025-03-09 16:39:24.411 [INF] Транспортное средство charging_6 зарегистрировано. Гараж: garrage_charging_6. ServiceSpots: {"parking_1":"parking_1_charging_6","parking_2":"parking_2_charging_6"}
+2025-03-09 16:39:24.648 [INF] User profile is available. Using 'C:\Users\Юля\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-09 16:39:24.918 [INF] Now listening on: https://localhost:7163
+2025-03-09 16:39:24.919 [INF] Now listening on: http://localhost:5117
+2025-03-09 16:39:24.921 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-09 16:39:24.922 [INF] Hosting environment: Development
+2025-03-09 16:39:24.923 [INF] Content root path: C:\Users\Юля\Documents\GitHub\charge\WebApplication7\
+2025-03-09 16:39:25.536 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - -
+2025-03-09 16:39:25.960 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - - - 200 - text/html;charset=utf-8 438.0778ms
+2025-03-09 16:39:25.975 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - -
+2025-03-09 16:39:26.003 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 28.4044ms
+2025-03-09 16:39:26.122 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - -
+2025-03-09 16:39:26.377 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 255.9450ms
+2025-03-09 16:39:26.562 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - -
+2025-03-09 16:39:26.937 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 375.7003ms
+2025-03-09 16:42:30.059 [INF] Инициируем регистрацию транспортного средства №1
+2025-03-09 16:42:30.429 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-09 16:42:30.556 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-09 16:42:30.597 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-09 16:42:32.755 [INF] Received HTTP response headers after 2140.58ms - 200
+2025-03-09 16:42:32.762 [INF] End processing HTTP request after 2308.8995ms - 200
+2025-03-09 16:42:32.770 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-09 16:42:33.140 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_7","VehicleId":"charging_7","ServiceSpots":{"parking_2":"parking_2_charging_7","parking_1":"parking_1_charging_7"}}
+2025-03-09 16:42:33.143 [INF] Транспортное средство charging_7 зарегистрировано. Гараж: garrage_charging_7. ServiceSpots: {"parking_2":"parking_2_charging_7","parking_1":"parking_1_charging_7"}
+2025-03-09 16:42:33.145 [INF] Инициируем регистрацию транспортного средства №2
+2025-03-09 16:42:33.146 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-09 16:42:33.147 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-09 16:42:33.148 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-09 16:42:33.282 [INF] Received HTTP response headers after 131.9125ms - 200
+2025-03-09 16:42:33.285 [INF] End processing HTTP request after 137.8127ms - 200
+2025-03-09 16:42:33.287 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-09 16:42:33.288 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_8","VehicleId":"charging_8","ServiceSpots":{"parking_1":"parking_1_charging_8","parking_2":"parking_2_charging_8"}}
+2025-03-09 16:42:33.289 [INF] Транспортное средство charging_8 зарегистрировано. Гараж: garrage_charging_8. ServiceSpots: {"parking_1":"parking_1_charging_8","parking_2":"parking_2_charging_8"}
+2025-03-09 16:42:33.291 [INF] Инициируем регистрацию транспортного средства №3
+2025-03-09 16:42:33.292 [INF] Отправляем запрос на регистрацию транспортного средства типа: charging
+2025-03-09 16:42:33.293 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-09 16:42:33.294 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/register-vehicle/charging"
+2025-03-09 16:42:33.455 [INF] Received HTTP response headers after 159.5132ms - 200
+2025-03-09 16:42:33.456 [INF] End processing HTTP request after 163.086ms - 200
+2025-03-09 16:42:33.458 [INF] Получен ответ на регистрацию, статус: "OK"
+2025-03-09 16:42:33.459 [INF] Ответ на регистрацию: {"GarrageNodeId":"garrage_charging_9","VehicleId":"charging_9","ServiceSpots":{"parking_1":"parking_1_charging_9","parking_2":"parking_2_charging_9"}}
+2025-03-09 16:42:33.462 [INF] Транспортное средство charging_9 зарегистрировано. Гараж: garrage_charging_9. ServiceSpots: {"parking_1":"parking_1_charging_9","parking_2":"parking_2_charging_9"}
+2025-03-09 16:42:33.760 [INF] User profile is available. Using 'C:\Users\Юля\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-09 16:42:34.076 [INF] Now listening on: https://localhost:7163
+2025-03-09 16:42:34.077 [INF] Now listening on: http://localhost:5117
+2025-03-09 16:42:34.079 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-09 16:42:34.081 [INF] Hosting environment: Development
+2025-03-09 16:42:34.083 [INF] Content root path: C:\Users\Юля\Documents\GitHub\charge\WebApplication7\
+2025-03-09 16:42:34.812 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/index.html - -
+2025-03-09 16:42:35.392 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/index.html - - - 200 - text/html;charset=utf-8 594.2710ms
+2025-03-09 16:42:35.469 [INF] Request starting HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - -
+2025-03-09 16:42:35.489 [INF] Request finished HTTP/2 GET https://localhost:7163/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 19.2613ms
+2025-03-09 16:42:35.598 [INF] Request starting HTTP/2 GET https://localhost:7163/_vs/browserLink - -
+2025-03-09 16:42:35.822 [INF] Request finished HTTP/2 GET https://localhost:7163/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 223.5761ms
+2025-03-09 16:42:36.005 [INF] Request starting HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - -
+2025-03-09 16:42:36.482 [INF] Request finished HTTP/2 GET https://localhost:7163/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 476.7177ms
+2025-03-09 16:43:00.734 [INF] Request starting HTTP/2 POST https://localhost:7163/request application/json 27
+2025-03-09 16:43:00.790 [INF] Executing endpoint 'ChargeModule.Controllers.ChargeController.RequestCharging (WebApplication7)'
+2025-03-09 16:43:00.877 [INF] Route matched with {action = "RequestCharging", controller = "Charge"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RequestCharging(ChargeModule.Models.ChargingRequest) on controller ChargeModule.Controllers.ChargeController (WebApplication7).
+2025-03-09 16:43:00.954 [INF] Обработка запроса зарядки для самолёта с парковкой parking_1
+2025-03-09 16:43:00.956 [INF] Транспортное средство charging_8 назначено для самолёта с парковкой parking_1
+2025-03-09 16:43:00.958 [INF] Запрашиваем маршрут от garrage_charging_8 до parking_1_charging_8 для транспортного средства charging
+2025-03-09 16:43:00.987 [INF] Отправляем запрос маршрута: {"from":"garrage_charging_8","to":"parking_1_charging_8","type":"charging"}
+2025-03-09 16:43:00.990 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/route"
+2025-03-09 16:43:00.993 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/route"
+2025-03-09 16:43:01.173 [INF] Received HTTP response headers after 175.8002ms - 200
+2025-03-09 16:43:01.175 [INF] End processing HTTP request after 185.02ms - 200
+2025-03-09 16:43:01.179 [INF] Получен ответ на запрос маршрута, статус: "OK"
+2025-03-09 16:43:01.191 [INF] Полученный маршрут от garrage_charging_8 до parking_1_charging_8: garrage_charging_8 -> garrage -> garrage_to_parking_1 -> parking_1_charging_8
+2025-03-09 16:43:01.194 [INF] Полученный маршрут от garrage_charging_8 до parking_1_charging_8: garrage_charging_8 -> garrage -> garrage_to_parking_1 -> parking_1_charging_8
+2025-03-09 16:43:01.205 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_8","vehicleType":"charging","from":"garrage_charging_8","to":"garrage"}
+2025-03-09 16:43:01.209 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-09 16:43:01.212 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-09 16:43:01.365 [INF] Received HTTP response headers after 150.6336ms - 200
+2025-03-09 16:43:01.368 [INF] End processing HTTP request after 158.1235ms - 200
+2025-03-09 16:43:01.373 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-09 16:43:01.405 [INF] Ответ на перемещение: {"Distance":10}
+2025-03-09 16:43:01.411 [INF] Запрос перемещения от garrage_charging_8 до garrage разрешен. Расстояние: 10
+2025-03-09 16:43:01.414 [INF] Ожидание 0.5 секунд для прохождения сегмента.
+2025-03-09 16:43:01.933 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_8","vehicleType":"charging","nodeId":"garrage"}
+2025-03-09 16:43:01.935 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-09 16:43:01.937 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-09 16:43:02.067 [INF] Received HTTP response headers after 128.2554ms - 200
+2025-03-09 16:43:02.068 [INF] End processing HTTP request after 133.0124ms - 200
+2025-03-09 16:43:02.070 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-09 16:43:02.071 [INF] Уведомление о прибытии для транспортного средства charging_8 получено успешно.
+2025-03-09 16:43:02.073 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_8","vehicleType":"charging","from":"garrage","to":"garrage_to_parking_1"}
+2025-03-09 16:43:02.076 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-09 16:43:02.077 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-09 16:43:02.213 [INF] Received HTTP response headers after 133.6914ms - 200
+2025-03-09 16:43:02.215 [INF] End processing HTTP request after 139.2622ms - 200
+2025-03-09 16:43:02.218 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-09 16:43:02.220 [INF] Ответ на перемещение: {"Distance":100}
+2025-03-09 16:43:02.222 [INF] Запрос перемещения от garrage до garrage_to_parking_1 разрешен. Расстояние: 100
+2025-03-09 16:43:02.225 [INF] Ожидание 5 секунд для прохождения сегмента.
+2025-03-09 16:43:07.234 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_8","vehicleType":"charging","nodeId":"garrage_to_parking_1"}
+2025-03-09 16:43:07.236 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-09 16:43:07.238 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-09 16:43:07.378 [INF] Received HTTP response headers after 137.9338ms - 200
+2025-03-09 16:43:07.379 [INF] End processing HTTP request after 143.4059ms - 200
+2025-03-09 16:43:07.381 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-09 16:43:07.382 [INF] Уведомление о прибытии для транспортного средства charging_8 получено успешно.
+2025-03-09 16:43:07.384 [INF] Отправляем запрос на перемещение: {"vehicleId":"charging_8","vehicleType":"charging","from":"garrage_to_parking_1","to":"parking_1_charging_8"}
+2025-03-09 16:43:07.386 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-09 16:43:07.388 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/move"
+2025-03-09 16:43:07.885 [INF] Received HTTP response headers after 495.9309ms - 200
+2025-03-09 16:43:07.887 [INF] End processing HTTP request after 501.4931ms - 200
+2025-03-09 16:43:07.889 [INF] Получен ответ на запрос перемещения, статус: "OK"
+2025-03-09 16:43:07.891 [INF] Ответ на перемещение: {"Distance":100}
+2025-03-09 16:43:07.894 [INF] Запрос перемещения от garrage_to_parking_1 до parking_1_charging_8 разрешен. Расстояние: 100
+2025-03-09 16:43:07.897 [INF] Ожидание 5 секунд для прохождения сегмента.
+2025-03-09 16:43:12.915 [INF] Отправляем уведомление о прибытии: {"vehicleId":"charging_8","vehicleType":"charging","nodeId":"parking_1_charging_8"}
+2025-03-09 16:43:12.917 [INF] Start processing HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-09 16:43:12.919 [INF] Sending HTTP request POST "https://ground-control.reaport.ru/arrived"
+2025-03-09 16:43:13.047 [INF] Received HTTP response headers after 126.3081ms - 200
+2025-03-09 16:43:13.049 [INF] End processing HTTP request after 131.8763ms - 200
+2025-03-09 16:43:13.051 [INF] Получен ответ на уведомление о прибытии, статус: "OK"
+2025-03-09 16:43:13.054 [INF] Уведомление о прибытии для транспортного средства charging_8 получено успешно.
+2025-03-09 16:43:13.058 [INF] Транспортное средство charging_8 начало зарядку на парковке parking_1_charging_8
+2025-03-09 16:43:13.078 [INF] Executing OkObjectResult, writing value of type 'ChargeModule.Models.ChargingResponse'.
+2025-03-09 16:43:13.100 [INF] Executed action ChargeModule.Controllers.ChargeController.RequestCharging (WebApplication7) in 12208.3584ms
+2025-03-09 16:43:13.107 [INF] Executed endpoint 'ChargeModule.Controllers.ChargeController.RequestCharging (WebApplication7)'
+2025-03-09 16:43:13.116 [INF] Request finished HTTP/2 POST https://localhost:7163/request application/json 27 - 200 - application/json;+charset=utf-8 12381.9198ms

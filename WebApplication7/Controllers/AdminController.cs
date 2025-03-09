@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace ChargeModule.Controllers
 {
     // Контроллер для администрирования системы зарядки
-    [Route("charge/admin")]
+    [Route("/admin")]
     public class AdminController : Controller
     {
         private readonly IAdminConfigService _adminConfigService;
@@ -24,7 +24,7 @@ namespace ChargeModule.Controllers
             _logger = logger;
         }
 
-        // Отображает страницу админки (GET /charge/admin)
+        // Отображает страницу админки (GET /admin)
         [HttpGet]
         public IActionResult Index()
         {
@@ -36,7 +36,7 @@ namespace ChargeModule.Controllers
             return View(model);
         }
 
-        // Обновляет параметры конфигурации (POST /charge/admin/update)
+        // Обновляет параметры конфигурации (POST /admin/update)
         [HttpPost("update")]
         public async Task<IActionResult> Update()
         {
@@ -56,7 +56,7 @@ namespace ChargeModule.Controllers
             return RedirectToAction("Index");
         }
 
-        // Запрос на регистрацию новой машины (POST /charge/admin/registerVehicle)
+        // Запрос на регистрацию новой машины (POST /admin/registerVehicle)
         [HttpPost("registerVehicle")]
         public async Task<IActionResult> RegisterVehicle()
         {

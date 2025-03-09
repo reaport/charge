@@ -55,7 +55,7 @@
     <h1>Административная панель ChargeModule</h1>
 
     <h2>Конфигурация</h2>
-    <form method="post" action="/charge/admin/update">
+    <form method="post" action="/admin/update">
         <div class="config">
             <label>Скорость движения (ед./сек): </label>
             <input type="number" step="0.1" name="MovementSpeed" value="@Model.Config.MovementSpeed" required />
@@ -89,7 +89,7 @@
     </table>
 
     <h2>Зарегистрировать транспортное средство</h2>
-    <form method="post" action="/charge/admin/registerVehicle">
+    <form method="post" action="/admin/registerVehicle">
         <div>
             <label>Тип транспортного средства: </label>
             <input type="text" name="Type" value="charging" required />

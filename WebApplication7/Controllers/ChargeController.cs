@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 namespace ChargeModule.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("/")]
     public class ChargeController : ControllerBase
     {
         private readonly IChargeService _chargeService;
@@ -20,7 +20,7 @@ namespace ChargeModule.Controllers
             _logger = logger;
         }
 
-        // POST /charge/request
+        // POST /request
         [HttpPost("request")]
         public async Task<IActionResult> RequestCharging([FromBody] ChargingRequest request)
         {
@@ -41,7 +41,7 @@ namespace ChargeModule.Controllers
             }
         }
 
-        // POST /charge/complete
+        // POST /complete
         [HttpPost("complete")]
         public async Task<IActionResult> CompleteCharging([FromBody] ChargingCompletionRequest request)
         {
